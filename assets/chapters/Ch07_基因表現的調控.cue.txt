@@ -1,0 +1,165 @@
+GNBF5020 術語詳解 · Ch 7 基因表現的調控
+專輯：assets/chapters/Ch07_基因表現的調控.m4a
+總長度：195.6 分鐘（160 段）
+
+0:00.00  第7章 基因表現的調控（開場）
+0:04.73  本章敘述
+15:53.17  14-3-3
+16:54.67  3 prime untranslated region (3 prime UTR)
+18:08.29  Activator
+19:09.98  AF-1 and AF-2
+20:19.04  AGO
+21:20.80  Allolactose
+22:27.08  Alternative polyadenylation
+23:32.17  Alternative splicing
+24:37.43  AND-gate
+25:38.24  Apo-repressor
+26:36.82  APOLO
+27:51.13  AR-V7
+29:06.29  Basal transcription
+30:06.38  calcium ions
+31:00.00  cAMP (cyclic adenosine monophosphate)
+32:04.59  CAP
+33:08.29  Cap (5 prime cap)
+34:11.75  CAP-cAMP (cAMP-CAP)
+35:18.70  Cell-type specificity
+36:25.89  Central dogma
+37:27.89  Cis-regulatory element
+38:29.84  Co-activator (nuclear receptor)
+39:35.29  Co-repressor (nuclear receptor)
+40:37.49  Core promoter
+41:44.62  Corepressor
+42:51.96  Cryptic exon
+43:58.27  CTGF
+45:05.18  Cytokine
+46:16.83  Cytoplasm
+47:10.83  Delta ligand
+48:05.98  Developmental specificity
+49:05.87  Dicer
+50:22.02  Dimerisation
+51:30.51  DNA-bending protein
+52:40.57  Drosha
+53:57.08  Endometrium
+55:04.76  Enhanceosome
+56:07.89  Enhancer
+57:13.04  EPO
+58:20.58  Estrogen receptor (ER)
+59:27.75  Estrogen response element (ERE)
+60:26.08  Exon
+61:40.39  Exon inclusion and exon skipping
+63:17.76  Exportin-5
+64:31.90  Gene expression
+65:42.07  Gene expression programme
+66:58.39  General transcription factor
+68:23.67  Genotype
+69:18.69  GLUT1
+70:24.88  Glycosylation
+71:25.89  Guide (lncRNA)
+72:54.42  HER1, HER3 and HER4
+74:15.46  HER2
+75:52.38  Heterodimer
+77:03.02  HIF-1α
+78:23.96  HIF-1β
+79:37.20  HIF-CAR
+80:51.05  Homodimer
+82:04.10  Hormone
+83:09.84  HSP90
+84:16.62  Hypoxia
+85:23.63  Hypoxia-responsive element (HRE)
+86:30.15  IL-1β
+87:36.60  Inducible system
+88:44.63  Induction
+89:51.02  Insulator
+90:54.91  Intron
+92:20.99  IPTG
+93:40.24  Isoform
+95:00.85  IκB (I-kappa-B)
+96:26.59  Lac operon
+97:28.86  Lac repressor
+98:20.44  Lactose
+99:09.01  LATS1
+100:08.28  Ligand
+101:00.62  LncRNA (long non-coding RNA)
+102:00.50  Luciferase
+102:49.86  MicroRNA (miRNA)
+104:36.64  mRNA half-life
+105:31.97  MST1
+106:29.10  Mutant splice site
+107:29.73  NF-κB (nuclear factor kappa B)
+108:41.97  NICD
+109:29.78  Notch
+110:19.55  NOTCH2
+111:11.63  Nuclear pore
+112:07.27  Nuclear receptor
+113:01.31  Nuclear transcription factor
+113:53.13  Operator
+114:55.77  Operon
+115:53.66  p300/CBP
+116:47.56  p50 and p65
+117:50.47  Pasha
+118:42.54  PHD and FIH
+120:02.40  Phenotype
+120:52.52  PNCTR
+121:50.04  Poly-A tail
+122:42.78  Polyadenylation
+123:44.22  Polyadenylation site (PAS)
+124:41.96  Polycistronic mRNA
+125:35.28  Polyubiquitination
+126:31.65  Pre-initiation complex
+127:55.61  Pre-mRNA
+128:58.43  Promoter
+130:05.47  Proteasome
+131:14.89  Proteolytic cleavage
+132:24.42  Receptor
+133:27.94  Receptor occupancy
+134:36.61  Recombinant protein
+135:47.17  Regulatory gene
+136:48.23  Reporter assay
+137:58.82  Reporter gene
+138:57.63  Repressible system
+139:55.80  Repressor
+140:58.31  RISC
+142:26.91  RNA-binding protein (RBP)
+143:47.13  RXR
+144:57.90  SAV
+146:07.14  Scaffold
+147:19.34  Second messenger
+148:24.39  Seed sequence
+149:30.53  Selective Estrogen Receptor Modulator (SERM)
+150:42.52  Serial deletion
+151:51.57  Signal transduction
+153:04.50  Silencer
+154:20.54  siRNA
+155:18.83  snRNP
+156:38.46  Spliceosome
+157:53.41  Splicing
+159:17.66  Splicing factor
+160:25.84  Structural gene
+161:33.26  synNotch
+162:44.54  Synthetic biology
+163:48.74  Tamoxifen
+164:56.36  TATA box
+166:18.48  TBP (TATA-box-binding protein)
+167:23.61  TEAD
+168:37.79  TFIID
+169:55.11  TINCR
+171:25.57  TNF-α
+172:43.11  Toxic pre-expression
+174:02.73  Trans-acting factor
+175:15.99  Transcription
+176:31.69  Transcription start site
+177:38.89  Translation
+178:50.75  Trastuzumab (Herceptin)
+180:29.76  tRNA (transfer RNA)
+181:48.49  Trp (tryptophan) operon
+182:53.54  Trp repressor
+184:03.91  Type I nuclear receptor
+185:13.95  Type II nuclear receptor
+186:29.45  Ubiquitin
+187:40.61  Untranslated region (UTR)
+189:10.11  VEGF
+190:25.00  VHL
+191:47.78  XIST
+193:03.93  YAP
+194:20.53  Zinc finger
+195:36.99  （本專輯完）
