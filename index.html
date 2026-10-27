@@ -105,6 +105,27 @@ font-weight:600;white-space:nowrap}
 #wake:hover{background:rgba(255,255,255,.22)}
 #wake[aria-pressed="true"]{background:var(--amber);border-color:var(--amber);
 color:#231a05}
+
+.now{display:none;flex:0 0 100%;gap:10px;align-items:center;padding:8px 0 2px;
+border-top:1px solid var(--line);margin-top:6px;font-size:12.5px;flex-wrap:wrap}
+.now.on{display:flex}
+.now audio{flex:1 1 220px;height:40px;min-width:180px}
+.now #nowlabel{color:var(--navy);font-weight:700;white-space:nowrap}
+.now a,.now button{background:#F1F3F9;border:1px solid var(--line);color:var(--navy);
+text-decoration:none;padding:7px 12px;border-radius:5px;font-weight:600;
+cursor:pointer;white-space:nowrap;font-size:12.5px;min-height:38px;
+display:inline-flex;align-items:center}
+.now a:hover,.now button:hover{background:var(--navy);color:#fff}
+@media (prefers-color-scheme:dark){
+  .now{border-top-color:var(--line)}
+  .now #nowlabel{color:#9FB4FF}
+  .now a,.now button{background:#1A2140;border-color:#2C3663;color:#C7D2F0}
+  .now a:hover,.now button:hover{background:var(--teal);color:#04222A}
+}
+@media (max-width:640px){
+  .now audio{flex:1 1 100%}
+  .now #nowlabel{width:100%}
+}
 .res{display:flex;gap:7px;overflow-x:auto;padding:4px 0;align-items:center;font-size:12.5px}.res a{background:#F1F3F9;border:1px solid var(--line);color:var(--navy);text-decoration:none;padding:5px 10px;border-radius:5px;white-space:nowrap;font-weight:600}.res a:hover{background:var(--navy);color:#fff}.res .rl{color:var(--grey);font-weight:700;flex:0 0 auto}</style></head><body>
 <header><div class="wrap">
 <h1>GNBF5020 術語詳解 · 廣東話有聲版</h1>
@@ -203,5 +224,61 @@ render(E);
     }
   });
   paint();
+})();
+</script><script>
+/* --- play a chapter inside the page instead of downloading it --- */
+(function(){
+  var wrap=document.querySelector('.bar .wrap');
+  var links=[].slice.call(document.querySelectorAll('.albums a'));
+  if(!wrap||!links.length) return;
+
+  var row=document.createElement('div');
+  row.className='now';
+  row.innerHTML='<audio id="nowplayer" controls preload="metadata"></audio>'+
+    '<span id="nowlabel"></span>'+
+    '<a id="nowdl" download>下載</a>'+
+    '<button id="nownext" type="button">下一章 ›</button>';
+  wrap.appendChild(row);
+
+  var player=document.getElementById('nowplayer');
+  var label=document.getElementById('nowlabel');
+  var dl=document.getElementById('nowdl');
+  var next=document.getElementById('nownext');
+  var current=null;
+
+  function play(a){
+    var src=a.getAttribute('href');
+    if(!src) return;
+    current=a;
+    player.src=src;
+    label.textContent=a.textContent.trim();
+    dl.href=src;
+    dl.setAttribute('download','');
+    row.classList.add('on');
+    player.play().catch(function(){});
+    try{ history.replaceState(null,'','#'+encodeURIComponent(a.textContent.trim())); }catch(e){}
+  }
+
+  links.forEach(function(a){
+    a.addEventListener('click',function(ev){
+      ev.preventDefault();
+      play(a);
+    });
+  });
+
+  next.addEventListener('click',function(){
+    if(!current) { play(links[1]||links[0]); return; }
+    var i=links.indexOf(current);
+    var j=i+1;
+    if(j>=links.length) j=links.length>1?1:0;
+    play(links[j]);
+  });
+
+  /* open straight into a chapter when the page is loaded with #Ch07 ... */
+  if(location.hash){
+    var want=decodeURIComponent(location.hash.slice(1)).trim();
+    var hit=links.filter(function(a){return a.textContent.trim()===want;})[0];
+    if(hit) play(hit);
+  }
 })();
 </script></body></html>
