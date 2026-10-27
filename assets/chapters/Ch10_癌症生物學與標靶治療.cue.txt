@@ -1,0 +1,55 @@
+GNBF5020 術語詳解 · Ch 10 癌症生物學與標靶治療
+專輯：assets/chapters/Ch10_癌症生物學與標靶治療.m4a
+總長度：61.0 分鐘（50 段）
+
+0:00.00  第10章 癌症生物學與標靶治療（開場）
+0:05.42  本章敘述
+11:18.60  Aerobic glycolysis
+12:18.70  Antibody-drug conjugate (ADC)
+13:26.80  BRAF
+14:16.38  branched linker
+15:10.24  Breathomics
+16:07.03  CEA
+17:00.48  censored
+17:39.51  Cetuximab
+18:48.83  circulating surrogate marker
+19:37.37  Constitutively active
+20:30.99  cytotoxic payload
+21:18.64  Daraxonrasib (Rasonque)
+22:27.75  datopotamab-deruxtecan
+23:17.75  deruxtecan
+24:11.54  Drug target
+25:24.96  Dual-payload ADC
+26:18.22  DXd
+27:33.33  EGFR
+29:09.10  ERBB2
+30:10.00  FDR
+31:04.18  GAP-mediated GTP hydrolysis
+32:04.43  GC-MS
+33:28.47  Glycolysis
+34:56.51  GTP-bound
+35:36.65  Human Protein Atlas
+37:06.49  K-Ras
+38:15.87  Kaplan-Meier curve
+39:18.82  Lactate
+40:17.53  median overall survival
+41:05.97  Metabolite
+41:49.93  Metabolite fingerprint
+42:45.33  Metabolomics
+43:55.55  NMR
+44:45.09  NPM1
+45:39.49  Oncogene
+46:32.60  PCA (principal component analysis)
+47:27.27  PI3K
+48:24.55  Predictive biomarker
+49:16.77  Prognostic biomarker
+50:08.02  Proliferative signal
+51:17.08  Receptor tyrosine kinase (RTK)
+52:44.81  Small molecule
+53:55.11  SN-38
+55:12.93  surrogate endpoints
+56:08.80  trastuzumab-deruxtecan
+57:03.02  Trop2
+58:16.97  Undraggable target
+59:37.04  Warburg effect
+60:57.02  （本專輯完）

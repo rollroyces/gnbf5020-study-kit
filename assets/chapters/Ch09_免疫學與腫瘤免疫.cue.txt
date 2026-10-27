@@ -1,0 +1,90 @@
+GNBF5020 術語詳解 · Ch 9 免疫學與腫瘤免疫
+專輯：assets/chapters/Ch09_免疫學與腫瘤免疫.m4a
+總長度：96.9 分鐘（85 段）
+
+0:00.00  第9章 免疫學與腫瘤免疫（開場）
+0:05.42  本章敘述
+12:50.76  3D reconstruction
+13:38.51  4-1BB
+14:40.47  Adenosine
+15:46.41  adhesion and activation
+16:38.38  Adoptive cell therapy
+17:42.87  Allogeneic
+18:33.39  Anergy
+19:40.43  Anti-PD-L1 antibody
+20:42.20  Autologous
+21:37.10  Cancer-associated fibroblast (CAF)
+22:43.61  CAR (Chimeric Antigen Receptor)
+23:53.97  CD28
+24:59.52  CD45
+25:56.64  Cell adhesion molecule (CAM)
+26:56.22  Chemokine
+27:59.73  chemotaxis
+28:36.72  Circulating tumour cell (CTC)
+29:42.28  Co-localisation
+30:44.94  Co-stimulatory domain
+31:49.32  Cold tumour
+32:48.37  Complement
+33:57.39  Confocal microscopy
+35:00.53  CTC0
+36:01.99  CTLA-4
+37:17.58  DAPI
+38:06.92  dMMR
+38:51.62  E-selectin
+39:54.32  ECM (extracellular matrix)
+41:00.27  EpCAM
+42:03.74  Epithelial-to-mesenchymal transition (EMT)
+43:13.02  Ex vivo
+44:18.98  FACS
+45:32.53  FAP
+46:19.65  Flow cytometry
+47:36.90  Forward scatter (FSC)
+48:48.70  Gating
+49:59.72  granularity
+50:55.08  Granzyme
+51:56.72  Hinge region
+52:58.25  Hot tumour
+54:14.43  ICAM-1
+55:22.01  IDO
+56:31.39  IL-10
+57:19.60  IL-15
+58:23.94  IL-2
+59:25.23  Immune checkpoint
+60:52.72  Immune evasion
+61:59.85  Immunofluorescence (IF)
+63:07.05  Immunohistochemistry (IHC)
+64:21.27  LAG3
+65:16.72  Laser capture microdissection (LCM)
+66:12.50  linker
+67:00.05  Lipid nanoparticle (LNP)
+67:59.49  Liquid biopsy
+69:01.78  Log-rank test
+69:54.59  manufacturing cycle
+70:55.60  MCP-1
+71:44.40  Multiplex immunofluorescence
+72:35.27  Neoantigen
+73:31.71  P-selectin
+74:40.86  PD-1
+75:46.16  PD-L1
+76:52.77  PD-L2
+77:36.88  PECAM-1
+78:36.41  Perforin
+79:30.50  pinhole
+80:13.83  progression-free survival
+81:08.34  rolling
+81:59.38  scFv
+83:07.27  Selectin
+84:16.65  side scatter (SSC)
+85:07.54  TAMs
+85:48.85  TGFβ
+87:03.21  TIM3
+87:50.57  Transmembrane domain
+89:01.91  transmembrane segments
+89:48.48  transmigration
+90:26.91  Tregs
+91:37.60  Tumor microenvironment
+93:10.58  ultramutator
+94:03.45  VCAM-1
+95:11.42  VISTA
+96:03.82  ZAP70
+96:55.92  （本專輯完）

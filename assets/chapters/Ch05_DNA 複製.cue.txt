@@ -1,0 +1,50 @@
+GNBF5020 術語詳解 · Ch 5 DNA 複製
+專輯：assets/chapters/Ch05_DNA 複製.m4a
+總長度：58.4 分鐘（45 段）
+
+0:00.00  第5章 DNA 複製（開場）
+0:04.26  本章敘述
+12:47.16  Anti-TERT
+13:56.08  dispersive
+14:52.26  DNA ligase
+16:00.36  DNA polymerase
+17:18.80  dNTPs
+18:05.86  Drug resistance
+19:20.64  End-replication problem
+20:41.06  EXO
+21:38.13  Exonuclease
+22:50.67  Hayflick limit
+24:12.96  Helicase
+25:33.88  Hepatocellular carcinoma (HCC)
+27:13.03  Hepatocyte
+28:30.36  Lagging strand
+29:26.78  Leading strand
+30:18.98  misincorporation
+31:12.90  Mitotic clock
+32:28.55  MLH1/PMS2
+33:36.32  MSH2/MSH6
+34:41.71  Nick
+35:32.99  Okazaki fragment
+36:32.17  origin of replication
+37:17.60  Phosphodiester bond
+38:08.74  POL
+38:54.80  Pold1
+39:53.22  Pole
+40:50.78  Pole e/e Pold1 e/e
+41:37.75  Primase
+42:35.43  Proofreading
+44:05.24  Replication bubble
+45:08.83  Replication fork
+46:01.67  replicons
+46:46.86  Reverse transcriptase
+47:56.29  RNase H
+48:54.77  Semi-conservative replication
+50:07.24  Senescence
+51:15.13  Telomerase
+52:40.36  TEM
+53:21.66  Template strand
+54:28.16  TERC
+55:21.03  Topoisomerase
+56:37.38  TZAP
+57:19.79  Wild type
+58:25.27  （本專輯完）

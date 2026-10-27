@@ -1,0 +1,24 @@
+GNBF5020 術語詳解 · Ch 11 檢驗技術與組學
+專輯：assets/chapters/Ch11_檢驗技術與組學.m4a
+總長度：30.9 分鐘（19 段）
+
+0:00.00  第11章 檢驗技術與組學（開場）
+0:05.05  本章敘述
+11:22.67  accuracy
+12:19.93  Biomarker
+13:26.99  Companion diagnostic
+14:34.08  Diagnostic biomarker
+15:45.10  ELISA
+17:10.53  FISH
+18:34.82  hydrodynamic focusing
+19:22.78  Isoelectric focusing
+20:37.23  Microarray
+21:41.50  Propidium iodide (PI)
+23:01.39  Proteomics
+24:07.36  qPCR
+25:22.72  RNA sequencing
+26:15.40  Sensitivity
+27:37.45  sheath fluid
+28:22.66  Specificity
+29:41.05  Western blot
+30:51.75  （本專輯完）

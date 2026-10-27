@@ -1,0 +1,70 @@
+GNBF5020 術語詳解 · Ch 4 染色質與表觀遺傳
+專輯：assets/chapters/Ch04_染色質與表觀遺傳.m4a
+總長度：77.1 分鐘（65 段）
+
+0:00.00  第4章 染色質與表觀遺傳（開場）
+0:05.10  本章敘述
+9:56.74  Acetylation
+11:01.11  Anti-PD-1 antibody
+12:16.19  AUC (area under the curve)
+13:40.21  Bisulfite sequencing
+14:45.38  Boundary elements
+15:26.42  BRD4
+16:38.12  CDKN2A
+17:58.38  Cell-free DNA (cfDNA)
+19:06.53  Cellular memory
+20:04.38  CHD
+21:07.59  Chromatin fibre
+22:08.81  Chromatin remodelling complex
+23:17.57  CIMP
+24:30.91  Confidence interval
+25:58.12  CpG island
+27:02.82  CpG site
+28:09.89  De novo methyltransferases
+29:07.79  Deacetylation
+30:17.43  DNMT1
+31:28.73  DNMT3A and DNMT3B
+32:49.63  Germ cell
+33:53.07  H1
+34:52.52  H2A K119ub
+35:49.91  H2B K123ub
+36:50.72  H3 K4me
+37:50.40  H3 K79me
+38:41.05  H3K4me3
+39:58.56  H3K9me3
+41:03.33  H4 K12ac
+41:58.73  H4 K8ac
+42:49.97  HDAC inhibitor
+44:16.26  Histone
+45:31.09  Histone code
+46:46.91  Histone modification
+47:54.68  Histone variants (H2A, H2B, H3 and H4)
+49:08.55  HP1
+50:01.44  hypermethylated
+50:55.25  hypomethylated
+51:50.28  IFN-γ
+53:01.90  INO80
+53:47.79  ISWI
+54:28.72  Lysine
+55:26.25  Maintenance methyltransferases
+56:07.17  MDSCs
+57:07.25  Methyl group
+57:52.33  Methylation
+59:01.47  MGMT
+60:10.43  Multivariate logistic regression
+61:16.20  non-covalent
+62:06.97  octamer
+62:57.85  Odds ratio
+63:58.41  orthology
+64:50.90  P-value
+66:14.11  p16
+67:16.77  Positive-feedback loop
+68:22.39  S-adenosyl methionine (SAMe)
+69:40.00  Sodium bisulfite
+70:35.81  STAT3
+71:54.40  Suv39h
+72:43.83  TET
+74:01.17  TMZ
+74:54.31  Tumor suppressor
+76:17.62  unmethylated
+77:05.20  （本專輯完）

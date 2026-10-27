@@ -1,0 +1,72 @@
+GNBF5020 術語詳解 · Ch 2 蛋白質與酵素
+專輯：assets/chapters/Ch02_蛋白質與酵素.m4a
+總長度：79.5 分鐘（67 段）
+
+0:00.00  第2章 蛋白質與酵素（開場）
+0:04.68  本章敘述
+10:39.78  2D-PAGE
+11:33.67  Activation energy
+12:39.58  Active site
+13:39.32  Allostery
+14:38.81  Alpha helix (alpha-helix)
+15:36.86  Amino acid
+16:34.77  Angstrom
+17:39.46  Antibody
+19:01.41  Antibody-dependent cellular cytotoxicity (ADCC)
+20:10.88  Antigen
+21:10.73  arginine
+21:59.70  Beta sheet (beta-sheet)
+23:06.37  C-terminus
+24:06.22  CDR1, CDR2 and CDR3
+25:12.55  Chaperone
+26:09.42  Codon
+27:11.95  cysteine
+27:54.08  Deamidation
+29:04.61  Disulfide bond
+30:19.74  DNA-binding domain (DBD)
+31:38.96  Edman degradation
+32:55.14  Endoplasmic reticulum (ER)
+34:01.51  Enzyme
+35:12.95  Epitope
+36:22.29  Fab fragment
+37:33.67  Fc fragment
+38:52.34  Fold (protein folding)
+40:06.18  Fv fragment
+41:10.71  Glycine
+42:00.64  Heavy chain
+43:20.67  IgG4
+44:34.64  Inclusion body
+45:46.22  Isotype
+46:56.71  LC-MS/MS
+47:56.94  Ligand-binding domain (LBD)
+48:59.19  Light chain
+49:58.79  Mass spectrometry
+50:47.52  Membrane protein
+51:48.43  Misfolding
+52:39.10  mRNA (messenger RNA)
+53:34.19  N-terminal domain (NTD)
+54:31.03  N-terminal signal peptide
+55:22.75  N-terminus
+56:12.13  Natural killer cell (NK cell)
+57:09.25  Peptide
+57:54.65  Peptide bond
+58:48.58  Polypeptide
+59:35.45  Post-translational modification
+60:32.13  Primary structure
+61:22.35  Protein domain
+62:25.92  Proteome
+63:52.47  Quaternary structure
+64:52.81  R-group (side chain)
+65:55.71  SDS-PAGE
+67:15.47  Secondary structure
+68:27.45  Secretory pathway
+69:42.30  Signal peptide
+70:46.77  Substrate
+71:51.49  Subunit
+72:47.89  Tertiary structure
+73:56.28  Variable region
+75:02.12  VH
+75:56.78  Vimentin
+77:28.41  VL
+78:10.11  X-ray crystallography
+79:28.67  （本專輯完）
