@@ -24,27 +24,27 @@ GNBF5020 術語詳解 · Ch 9 免疫學與腫瘤免疫
 29:42.28  Co-localisation
 30:44.94  Co-stimulatory domain
 31:49.32  Cold tumour
-32:48.37  Complement
-33:57.39  Confocal microscopy
-35:00.53  CTC0
-36:01.99  CTLA-4
-37:17.58  DAPI
-38:06.92  dMMR
-38:51.62  E-selectin
-39:54.32  ECM (extracellular matrix)
-41:00.27  EpCAM
-42:03.74  Epithelial-to-mesenchymal transition (EMT)
-43:13.02  Ex vivo
-44:18.98  FACS
-45:32.53  FAP
-46:19.65  Flow cytometry
-47:36.90  Forward scatter (FSC)
-48:48.70  Gating
-49:59.72  granularity
-50:55.08  Granzyme
-51:56.72  Hinge region
-52:58.25  Hot tumour
-54:14.43  ICAM-1
+32:48.36  Complement
+33:57.38  Confocal microscopy
+35:00.52  CTC0
+36:01.98  CTLA-4
+37:17.57  DAPI
+38:06.91  dMMR
+38:51.61  E-selectin
+39:54.31  ECM (extracellular matrix)
+41:00.26  EpCAM
+42:03.73  Epithelial-to-mesenchymal transition (EMT)
+43:13.01  Ex vivo
+44:18.97  FACS
+45:32.52  FAP
+46:19.64  Flow cytometry
+47:36.89  Forward scatter (FSC)
+48:48.69  Gating
+49:59.71  granularity
+50:55.07  Granzyme
+51:56.71  Hinge region
+52:58.24  Hot tumour
+54:14.42  ICAM-1
 55:22.01  IDO
 56:31.39  IL-10
 57:19.60  IL-15
@@ -55,36 +55,36 @@ GNBF5020 術語詳解 · Ch 9 免疫學與腫瘤免疫
 63:07.05  Immunohistochemistry (IHC)
 64:21.27  LAG3
 65:16.72  Laser capture microdissection (LCM)
-66:12.50  linker
-67:00.05  Lipid nanoparticle (LNP)
-67:59.49  Liquid biopsy
-69:01.78  Log-rank test
-69:54.59  manufacturing cycle
-70:55.60  MCP-1
-71:44.40  Multiplex immunofluorescence
-72:35.27  Neoantigen
-73:31.71  P-selectin
-74:40.86  PD-1
-75:46.16  PD-L1
-76:52.77  PD-L2
-77:36.88  PECAM-1
-78:36.41  Perforin
-79:30.50  pinhole
-80:13.83  progression-free survival
-81:08.34  rolling
-81:59.38  scFv
-83:07.27  Selectin
-84:16.65  side scatter (SSC)
-85:07.54  TAMs
-85:48.85  TGFβ
-87:03.21  TIM3
-87:50.57  Transmembrane domain
-89:01.91  transmembrane segments
-89:48.48  transmigration
-90:26.91  Tregs
-91:37.60  Tumor microenvironment
-93:10.58  ultramutator
-94:03.45  VCAM-1
-95:11.42  VISTA
-96:03.82  ZAP70
-96:55.92  （本專輯完）
+66:13.41  linker
+67:00.96  Lipid nanoparticle (LNP)
+68:00.40  Liquid biopsy
+69:02.69  Log-rank test
+69:55.50  manufacturing cycle
+70:56.51  MCP-1
+71:45.31  Multiplex immunofluorescence
+72:36.18  Neoantigen
+73:32.62  P-selectin
+74:41.77  PD-1
+75:47.07  PD-L1
+76:53.67  PD-L2
+77:37.78  PECAM-1
+78:37.31  Perforin
+79:31.40  pinhole
+80:14.73  progression-free survival
+81:09.24  rolling
+82:00.28  scFv
+83:08.17  Selectin
+84:17.55  side scatter (SSC)
+85:08.44  TAMs
+85:50.00  TGFβ
+87:03.93  TIM3
+87:51.29  Transmembrane domain
+89:01.62  transmembrane segments
+89:48.80  transmigration
+90:27.78  Tregs
+91:38.14  Tumor microenvironment
+93:11.12  ultramutator
+94:02.76  VCAM-1
+95:10.73  VISTA
+96:01.69  ZAP70
+96:53.79  （本專輯完）

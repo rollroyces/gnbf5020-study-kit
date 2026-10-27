@@ -14,57 +14,57 @@ GNBF5020 術語詳解 · Ch 4 染色質與表觀遺傳
 17:58.38  Cell-free DNA (cfDNA)
 19:06.53  Cellular memory
 20:04.38  CHD
-21:07.59  Chromatin fibre
-22:08.81  Chromatin remodelling complex
-23:17.57  CIMP
-24:30.91  Confidence interval
-25:58.12  CpG island
-27:02.82  CpG site
-28:09.89  De novo methyltransferases
-29:07.79  Deacetylation
-30:17.43  DNMT1
-31:28.73  DNMT3A and DNMT3B
-32:49.63  Germ cell
-33:53.07  H1
-34:52.52  H2A K119ub
-35:49.91  H2B K123ub
-36:50.72  H3 K4me
-37:50.40  H3 K79me
-38:41.05  H3K4me3
-39:58.56  H3K9me3
-41:03.33  H4 K12ac
-41:58.73  H4 K8ac
-42:49.97  HDAC inhibitor
-44:16.26  Histone
-45:31.09  Histone code
-46:46.91  Histone modification
-47:54.68  Histone variants (H2A, H2B, H3 and H4)
-49:08.55  HP1
-50:01.44  hypermethylated
-50:55.25  hypomethylated
-51:50.28  IFN-γ
-53:01.90  INO80
-53:47.79  ISWI
-54:28.72  Lysine
-55:26.25  Maintenance methyltransferases
-56:07.17  MDSCs
-57:07.25  Methyl group
-57:52.33  Methylation
-59:01.47  MGMT
-60:10.43  Multivariate logistic regression
-61:16.20  non-covalent
-62:06.97  octamer
-62:57.85  Odds ratio
-63:58.41  orthology
-64:50.90  P-value
-66:14.11  p16
-67:16.77  Positive-feedback loop
-68:22.39  S-adenosyl methionine (SAMe)
-69:40.00  Sodium bisulfite
-70:35.81  STAT3
-71:54.40  Suv39h
-72:43.83  TET
-74:01.17  TMZ
-74:54.31  Tumor suppressor
-76:17.62  unmethylated
-77:05.20  （本專輯完）
+21:08.76  Chromatin fibre
+22:09.98  Chromatin remodelling complex
+23:18.74  CIMP
+24:32.08  Confidence interval
+25:59.29  CpG island
+27:03.99  CpG site
+28:11.06  De novo methyltransferases
+29:08.96  Deacetylation
+30:18.60  DNMT1
+31:29.90  DNMT3A and DNMT3B
+32:50.80  Germ cell
+33:54.24  H1
+34:53.69  H2A K119ub
+35:51.08  H2B K123ub
+36:51.89  H3 K4me
+37:51.57  H3 K79me
+38:42.22  H3K4me3
+39:59.73  H3K9me3
+41:04.50  H4 K12ac
+41:59.90  H4 K8ac
+42:51.14  HDAC inhibitor
+44:17.43  Histone
+45:32.26  Histone code
+46:48.08  Histone modification
+47:55.85  Histone variants (H2A, H2B, H3 and H4)
+49:09.72  HP1
+50:02.61  hypermethylated
+50:56.42  hypomethylated
+51:51.45  IFN-γ
+53:03.07  INO80
+53:48.96  ISWI
+54:29.89  Lysine
+55:27.42  Maintenance methyltransferases
+56:08.34  MDSCs
+57:08.42  Methyl group
+57:53.50  Methylation
+59:02.64  MGMT
+60:11.60  Multivariate logistic regression
+61:17.37  non-covalent
+62:08.14  octamer
+62:59.02  Odds ratio
+63:59.58  orthology
+64:52.07  P-value
+66:15.28  p16
+67:17.94  Positive-feedback loop
+68:23.56  S-adenosyl methionine (SAMe)
+69:41.17  Sodium bisulfite
+70:36.98  STAT3
+71:55.57  Suv39h
+72:45.00  TET
+74:02.34  TMZ
+74:55.48  Tumor suppressor
+76:18.79  unmethylated
+77:06.37  （本專輯完）

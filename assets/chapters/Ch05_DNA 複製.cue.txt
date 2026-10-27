@@ -16,35 +16,35 @@ GNBF5020 術語詳解 · Ch 5 DNA 複製
 22:50.67  Hayflick limit
 24:12.96  Helicase
 25:33.88  Hepatocellular carcinoma (HCC)
-27:13.03  Hepatocyte
-28:30.36  Lagging strand
-29:26.78  Leading strand
-30:18.98  misincorporation
-31:12.90  Mitotic clock
-32:28.55  MLH1/PMS2
-33:36.32  MSH2/MSH6
-34:41.71  Nick
-35:32.99  Okazaki fragment
-36:32.17  origin of replication
-37:17.60  Phosphodiester bond
-38:08.74  POL
-38:54.80  Pold1
-39:53.22  Pole
-40:50.78  Pole e/e Pold1 e/e
-41:37.75  Primase
-42:35.43  Proofreading
-44:05.24  Replication bubble
-45:08.83  Replication fork
-46:01.67  replicons
-46:46.86  Reverse transcriptase
-47:56.29  RNase H
-48:54.77  Semi-conservative replication
-50:07.24  Senescence
-51:15.13  Telomerase
-52:40.36  TEM
-53:21.66  Template strand
-54:28.16  TERC
-55:21.03  Topoisomerase
-56:37.38  TZAP
-57:19.79  Wild type
-58:25.27  （本專輯完）
+27:13.44  Hepatocyte
+28:30.77  Lagging strand
+29:27.19  Leading strand
+30:19.39  misincorporation
+31:13.31  Mitotic clock
+32:28.96  MLH1/PMS2
+33:36.73  MSH2/MSH6
+34:42.12  Nick
+35:33.40  Okazaki fragment
+36:32.57  origin of replication
+37:18.00  Phosphodiester bond
+38:09.14  POL
+38:55.20  Pold1
+39:52.85  Pole
+40:50.41  Pole e/e Pold1 e/e
+41:35.34  Primase
+42:33.02  Proofreading
+44:02.83  Replication bubble
+45:06.42  Replication fork
+45:59.26  replicons
+46:44.45  Reverse transcriptase
+47:53.88  RNase H
+48:52.36  Semi-conservative replication
+50:04.83  Senescence
+51:12.72  Telomerase
+52:37.95  TEM
+53:19.25  Template strand
+54:25.75  TERC
+55:18.62  Topoisomerase
+56:34.97  TZAP
+57:17.38  Wild type
+58:22.86  （本專輯完）

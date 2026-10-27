@@ -1,6 +1,6 @@
 GNBF5020 術語詳解 · Ch 3 DNA、基因與染色體
 專輯：assets/chapters/Ch03_DNA、基因與染色體.m4a
-總長度：99.0 分鐘（90 段）
+總長度：98.9 分鐘（90 段）
 
 0:00.00  第3章 DNA、基因與染色體（開場）
 0:05.42  本章敘述
@@ -21,75 +21,75 @@ GNBF5020 術語詳解 · Ch 3 DNA、基因與染色體
 24:35.25  Cytosine
 25:39.50  Deletion
 26:41.73  Denaturation
-27:33.53  Deoxyribose
-28:26.03  Diploid
-29:42.04  DNA fingerprint
-30:28.03  DNase
-31:46.03  donor plasmid
-32:29.24  Double helix
-33:43.03  Down syndrome
-34:50.14  Driver
-35:59.84  Duplication
-37:09.54  EcoRI
-38:05.83  Euchromatin
-39:13.21  Extension
-40:05.74  Frameshift
-41:22.01  G-banding
-42:39.31  GC-rich
-43:41.17  Gene
-44:42.76  Genome
-45:40.74  genomic instability
-46:42.13  Griffith
-47:53.69  guanine
-48:40.22  Heterochromatin
-49:49.30  Heterozygous
-51:00.90  Homologous chromosome
-52:06.22  Homozygous
-53:04.79  ideogram
-54:01.80  insert
-54:47.24  Inversion
-56:03.14  Karyotype
-57:02.07  Karyotyping
-57:54.51  Meiosis I and meiosis II
-58:51.70  Melting temperature (Tm)
-59:38.06  Missense mutation
-60:27.82  Molecular cloning
-61:13.51  Monosomy
-62:12.67  Mutation
-62:51.13  Non-disjunction
-63:42.11  Nonsense mutation
-64:43.26  NotI
-65:32.22  Nucleosome
-66:44.10  p-arm
-67:29.60  Passenger
-68:14.39  PCR
-69:09.24  plasmid
-69:58.28  Point mutation
-70:49.00  Primer
-71:47.46  Primer annealing
-72:32.82  Primer pair
-73:17.49  Protease
-74:25.16  q-arm
-75:34.55  recipient plasmid
-76:21.49  recombinant plasmid
-77:09.09  resolution
-78:02.38  Ribose
-79:08.82  Sanger sequencing
-80:17.87  Silent mutation
-81:02.22  Sister chromatid
-82:13.96  sticky end
-82:51.07  Strand
-83:58.43  Structural variant
-85:22.37  Substitution
-86:36.56  Telomere
-87:58.07  thymine
-88:45.75  Transcription factor
-90:03.09  Transforming principle
-91:19.59  Translocation
-92:36.27  Trisomy
-93:49.40  Trisomy 21
-95:02.17  Turner syndrome (45,X)
-96:12.09  uracil
-96:57.54  vector
-97:41.36  Watson, Crick and Franklin
-98:57.33  （本專輯完）
+27:31.60  Deoxyribose
+28:24.10  Diploid
+29:40.11  DNA fingerprint
+30:26.10  DNase
+31:44.09  donor plasmid
+32:27.30  Double helix
+33:41.09  Down syndrome
+34:48.20  Driver
+35:57.90  Duplication
+37:07.60  EcoRI
+38:03.89  Euchromatin
+39:11.27  Extension
+40:03.80  Frameshift
+41:20.07  G-banding
+42:37.37  GC-rich
+43:39.23  Gene
+44:40.82  Genome
+45:38.80  genomic instability
+46:40.19  Griffith
+47:51.75  guanine
+48:38.28  Heterochromatin
+49:47.36  Heterozygous
+50:58.96  Homologous chromosome
+52:04.28  Homozygous
+53:02.85  ideogram
+54:00.94  insert
+54:46.38  Inversion
+56:02.29  Karyotype
+57:00.42  Karyotyping
+57:52.86  Meiosis I and meiosis II
+58:50.05  Melting temperature (Tm)
+59:36.41  Missense mutation
+60:26.17  Molecular cloning
+61:11.86  Monosomy
+62:11.02  Mutation
+62:49.48  Non-disjunction
+63:40.46  Nonsense mutation
+64:41.61  NotI
+65:30.57  Nucleosome
+66:42.45  p-arm
+67:27.95  Passenger
+68:12.74  PCR
+69:07.59  plasmid
+69:56.63  Point mutation
+70:47.35  Primer
+71:45.81  Primer annealing
+72:31.17  Primer pair
+73:15.84  Protease
+74:23.51  q-arm
+75:32.89  recipient plasmid
+76:19.83  recombinant plasmid
+77:07.43  resolution
+78:00.72  Ribose
+79:07.16  Sanger sequencing
+80:16.21  Silent mutation
+81:00.56  Sister chromatid
+82:12.30  sticky end
+82:49.41  Strand
+83:55.54  Structural variant
+85:19.48  Substitution
+86:33.67  Telomere
+87:55.18  thymine
+88:42.86  Transcription factor
+90:00.20  Transforming principle
+91:16.70  Translocation
+92:33.38  Trisomy
+93:46.51  Trisomy 21
+94:59.28  Turner syndrome (45,X)
+96:09.20  uracil
+96:54.65  vector
+97:38.47  Watson, Crick and Franklin
+98:54.44  （本專輯完）

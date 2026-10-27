@@ -19,23 +19,23 @@ GNBF5020 術語詳解 · Ch 2 蛋白質與酵素
 23:06.37  C-terminus
 24:06.22  CDR1, CDR2 and CDR3
 25:12.55  Chaperone
-26:09.42  Codon
-27:11.95  cysteine
-27:54.08  Deamidation
-29:04.61  Disulfide bond
-30:19.74  DNA-binding domain (DBD)
-31:38.96  Edman degradation
-32:55.14  Endoplasmic reticulum (ER)
-34:01.51  Enzyme
-35:12.95  Epitope
-36:22.29  Fab fragment
-37:33.67  Fc fragment
-38:52.34  Fold (protein folding)
-40:06.18  Fv fragment
-41:10.71  Glycine
-42:00.64  Heavy chain
-43:20.67  IgG4
-44:34.64  Inclusion body
+26:09.41  Codon
+27:11.94  cysteine
+27:54.07  Deamidation
+29:04.60  Disulfide bond
+30:19.73  DNA-binding domain (DBD)
+31:38.95  Edman degradation
+32:55.13  Endoplasmic reticulum (ER)
+34:01.50  Enzyme
+35:12.94  Epitope
+36:22.28  Fab fragment
+37:33.66  Fc fragment
+38:52.33  Fold (protein folding)
+40:06.17  Fv fragment
+41:10.70  Glycine
+42:00.63  Heavy chain
+43:20.66  IgG4
+44:34.63  Inclusion body
 45:46.22  Isotype
 46:56.71  LC-MS/MS
 47:56.94  Ligand-binding domain (LBD)
@@ -52,21 +52,21 @@ GNBF5020 術語詳解 · Ch 2 蛋白質與酵素
 57:54.65  Peptide bond
 58:48.58  Polypeptide
 59:35.45  Post-translational modification
-60:32.13  Primary structure
-61:22.35  Protein domain
-62:25.92  Proteome
-63:52.47  Quaternary structure
-64:52.81  R-group (side chain)
-65:55.71  SDS-PAGE
-67:15.47  Secondary structure
-68:27.45  Secretory pathway
-69:42.30  Signal peptide
-70:46.77  Substrate
-71:51.49  Subunit
-72:47.89  Tertiary structure
-73:56.28  Variable region
-75:02.12  VH
-75:56.78  Vimentin
-77:28.41  VL
-78:10.11  X-ray crystallography
-79:28.67  （本專輯完）
+60:34.31  Primary structure
+61:24.52  Protein domain
+62:28.09  Proteome
+63:54.64  Quaternary structure
+64:54.98  R-group (side chain)
+65:57.88  SDS-PAGE
+67:17.64  Secondary structure
+68:29.62  Secretory pathway
+69:44.47  Signal peptide
+70:48.94  Substrate
+71:53.66  Subunit
+72:48.68  Tertiary structure
+73:57.07  Variable region
+75:02.91  VH
+75:57.57  Vimentin
+77:29.20  VL
+78:10.90  X-ray crystallography
+79:29.46  （本專輯完）
