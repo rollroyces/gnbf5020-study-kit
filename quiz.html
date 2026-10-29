@@ -127,6 +127,10 @@ header .sub{font-size:12.5px}
     if(h!==undefined)e.innerHTML=h; return e;}
   function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
   function pad(n){return (n<10?'0':'')+n;}
+  function shuffled(n){var a=[],i; for(i=0;i<n;i++)a.push(i);
+    for(i=n-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));
+      var t=a[i];a[i]=a[j];a[j]=t;}
+    return a;}
 
   function load(){
     fetch('quizzes/manifest.json',{cache:'no-store'}).then(function(r){
@@ -209,6 +213,7 @@ header .sub{font-size:12.5px}
              (typeFilter==='all'||q.type===typeFilter);
     });
     order=bank.map(function(_,i){return i;});
+    bank.forEach(function(q){q._ord=null;});
     for(var i=order.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));
       var t=order[i];order[i]=order[j];order[j]=t;}
     idx=0; right=0; wrongIds=[]; answered=false; againBtn.style.display='none';
@@ -228,11 +233,13 @@ header .sub{font-size:12.5px}
     box.appendChild(meta);
     box.appendChild(el('div','qtext',esc(q.q)));
     var opts=el('div','opts');
-    (q.options||[]).forEach(function(o,i){
+    if(!q._ord){q._ord=shuffled((q.options||[]).length);}
+    var correctPos=q._ord.indexOf(q.answer);
+    q._ord.forEach(function(orig,pos){
       var b=el('button','opt'); b.type='button';
-      b.appendChild(el('span','k','ABCD'[i]||String(i+1)));
-      b.appendChild(el('span','',' '+esc(o)));
-      b.onclick=function(){choose(b,i,q,opts);};
+      b.appendChild(el('span','k','ABCD'[pos]||String(pos+1)));
+      b.appendChild(el('span','',' '+esc(q.options[orig])));
+      b.onclick=function(){choose(b,pos,q,opts,correctPos);};
       opts.appendChild(b);
     });
     box.appendChild(opts);
@@ -257,13 +264,13 @@ header .sub{font-size:12.5px}
     fill.style.width=(100*idx/bank.length)+'%';
   }
 
-  function choose(btn,i,q,opts){
+  function choose(btn,i,q,opts,correctPos){
     if(answered) return; answered=true;
-    var ok=(i===q.answer);
+    var ok=(i===correctPos);
     if(ok) right++; else wrongIds.push(q);
     opts.querySelectorAll('.opt').forEach(function(b,j){
       b.classList.add('done');
-      if(j===q.answer) b.classList.add('right');
+      if(j===correctPos) b.classList.add('right');
       else if(j===i) b.classList.add('wrong');
     });
     var fb=document.querySelector('.fb');
