@@ -121,32 +121,36 @@ header .sub{font-size:12.5px}
   var app=document.getElementById('app'), scoreEl=document.getElementById('score'),
       fill=document.getElementById('pfill'), againBtn=document.getElementById('again');
   var ALL=[], bank=[], idx=0, right=0, wrongIds=[], answered=false,
-      chapFilter='all', typeFilter='all', order=[];
+      chapFilter='all', typeFilter='all', order=[], chips=[];
 
   function el(t,c,h){var e=document.createElement(t); if(c)e.className=c;
     if(h!==undefined)e.innerHTML=h; return e;}
   function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+  function pad(n){return (n<10?'0':'')+n;}
 
   function load(){
     fetch('quizzes/manifest.json',{cache:'no-store'}).then(function(r){
       if(!r.ok) throw new Error('manifest '+r.status);
       return r.json();
     }).then(function(m){
-      return Promise.all(m.shards.map(function(s){
-        return fetch('quizzes/'+s.file,{cache:'no-store'}).then(function(r){
-          if(!r.ok) throw new Error(s.file+' '+r.status);
+      var files=(m.shards||[]).map(function(s){
+        return (typeof s==='string')?s:s.file;});
+      return Promise.all(files.map(function(f){
+        return fetch('quizzes/'+f,{cache:'no-store'}).then(function(r){
+          if(!r.ok) throw new Error(f+' '+r.status);
           return r.json();
         });
-      })).then(function(docs){ return {manifest:m,docs:docs}; });
-    }).then(function(res){
+      })).then(function(docs){ return docs; });
+    }).then(function(docs){
       ALL=[];
-      res.docs.forEach(function(d){
+      docs.forEach(function(d){
         (d.questions||[]).forEach(function(q){
-          q.chapter=d.chapter; q.chapterTitle=d.title; ALL.push(q);
+          q.chapter=(d.chapter===undefined?0:d.chapter);
+          q.chapterTitle=d.title; ALL.push(q);
         });
       });
       if(!ALL.length){ app.innerHTML='<div class="msg">試題未載入到。</div>'; return; }
-      buildControls(res.manifest);
+      buildControls(docs);
       start();
     }).catch(function(e){
       app.innerHTML='<div class="msg">載入唔到試題（'+esc(e.message)+
@@ -154,39 +158,48 @@ header .sub{font-size:12.5px}
     });
   }
 
-  function buildControls(m){
+  function buildControls(docs){
     var bar=document.querySelector('.bar .wrap');
+    var chapters=[];
+    docs.forEach(function(d){
+      if(chapters.indexOf(d.chapter)<0) chapters.push(d.chapter);});
+    chapters.sort(function(a,b){return a-b;});
     var c1=el('div','ctl');
     c1.appendChild(el('span','lab','章節'));
     var bAll=el('button','chip','全部'); bAll.setAttribute('aria-pressed','true');
-    bAll.onclick=function(){chapFilter='all';syncChips();start();}; c1.appendChild(bAll);
-    m.shards.forEach(function(s){
-      var b=el('button','chip','Ch '+(s.chapter===0?'00':('0'+s.chapter).slice(-2)));
-      b.setAttribute('aria-pressed','false'); b.dataset.ch=String(s.chapter);
+    bAll.dataset.ch='all';
+    bAll.onclick=function(){chapFilter='all';syncChips();start();};
+    c1.appendChild(bAll); chips.push(bAll);
+    chapters.forEach(function(ch){
+      var b=el('button','chip','Ch '+pad(ch));
+      b.setAttribute('aria-pressed','false'); b.dataset.ch=String(ch);
       b.onclick=function(){chapFilter=b.dataset.ch;syncChips();start();};
-      c1.appendChild(b);
+      c1.appendChild(b); chips.push(b);
     });
     bar.appendChild(c1);
     var c2=el('div','ctl');
     c2.appendChild(el('span','lab','題型'));
     var tAll=el('button','chip','全部'); tAll.setAttribute('aria-pressed','true');
-    tAll.onclick=function(){typeFilter='all';syncChips();start();}; c2.appendChild(tAll);
+    tAll.dataset.t='all';
+    tAll.onclick=function(){typeFilter='all';syncChips();start();};
+    c2.appendChild(tAll); chips.push(tAll);
     Object.keys(TYPES).forEach(function(t){
       var b=el('button','chip',TYPES[t]); b.setAttribute('aria-pressed','false');
       b.dataset.t=t; b.onclick=function(){typeFilter=b.dataset.t;syncChips();start();};
-      c2.appendChild(b);
+      c2.appendChild(b); chips.push(b);
     });
     bar.appendChild(c2);
     window.syncChips=function(){
-      bar.querySelectorAll('.chip').forEach(function(b){
-        var on=(b.dataset.ch===undefined?chapFilter==='all':b.dataset.ch===chapFilter) &&
-                (b.dataset.t===undefined?typeFilter==='all':b.dataset.t===typeFilter);
+      chips.forEach(function(b){
+        var on=(b.dataset.ch===undefined||b.dataset.ch===chapFilter) &&
+                (b.dataset.t===undefined||b.dataset.t===typeFilter);
         b.setAttribute('aria-pressed',on?'true':'false');
       });
     };
     document.getElementById('shuffle').onclick=function(){start();};
     againBtn.onclick=function(){
-      var w=wrongIds; start(); bank=w; idx=0; right=0; render();
+      var w=wrongIds; start(); bank=w; order=bank.map(function(_,i){return i;});
+      idx=0; right=0; render();
     };
   }
 
