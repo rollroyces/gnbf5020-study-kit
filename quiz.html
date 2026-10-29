@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="zh-Hant-HK"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GNBF5020 術語詳解 · 自我測驗</title>
+<style>
+:root{--navy:#1A237E;--navy-d:#12185C;--teal:#00838F;--teal-d:#00666F;
+--amber:#FF8F00;--amber-d:#8A5A12;--ink:#16233A;--grey:#5A6B85;
+--line:#C5CAE9;--bg:#F7F8FC;--green:#2E7D32;--red:#C62828;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font:16px/1.65 -apple-system,"Helvetica Neue",Arial,"PingFang HK",
+"Noto Sans TC","Microsoft JhengHei",sans-serif}
+header{background:var(--navy);color:#fff;padding:22px 0 18px}
+.wrap{max-width:940px;margin:0 auto;padding:0 16px}
+header h1{margin:0 0 4px;font-size:21px;letter-spacing:.3px}
+header .sub{color:#CFD8DC;font-size:13.5px;margin:0 0 12px}
+header .sub a{color:#FFD08A}
+.ctl{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.ctl .lab{color:#9FB0C4;font-size:12.5px;font-weight:700;margin-right:2px}
+.chip{border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.1);
+color:#fff;border-radius:5px;padding:7px 11px;font-size:13px;cursor:pointer;
+font-weight:600;min-height:38px;display:inline-flex;align-items:center}
+.chip:hover{background:rgba(255,255,255,.22)}
+.chip[aria-pressed="true"]{background:var(--amber);border-color:var(--amber);color:#231a05}
+.bar{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:9}
+.bar .wrap{display:flex;gap:10px;align-items:center;padding:9px 16px;flex-wrap:wrap}
+.prog{flex:1 1 160px;height:8px;background:#E4E8F2;border-radius:4px;overflow:hidden;min-width:120px}
+.prog i{display:block;height:100%;background:var(--teal);width:0;transition:width .2s}
+.score{font-weight:700;color:var(--navy);font-size:14px;white-space:nowrap}
+main{padding:16px 0 60px}
+.qbox{background:#fff;border:1px solid #E4E8F2;border-radius:8px;padding:18px}
+.qmeta{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:10px}
+.badge{font-size:12px;font-weight:700;color:#fff;background:var(--teal);
+border-radius:4px;padding:3px 8px}
+.badge.t2m{background:var(--navy)} .badge.m2t{background:var(--teal-d)}
+.badge.cloze{background:var(--amber)} .badge.concept{background:var(--green)}
+.term{font-weight:700;color:var(--navy);font-size:15px}
+.qtext{font-size:19px;font-weight:600;line-height:1.5;margin:6px 0 16px}
+.opts{display:grid;gap:10px}
+.opt{text-align:left;background:#F7F8FC;border:1px solid var(--line);border-radius:8px;
+padding:14px 16px;font-size:16.5px;cursor:pointer;min-height:56px;
+display:flex;align-items:center;gap:12px;line-height:1.45}
+.opt:hover:not(.done){background:#EEF0FA}
+.opt .k{flex:0 0 26px;width:26px;height:26px;border-radius:50%;
+background:#E4E8F2;color:var(--navy);display:flex;align-items:center;
+justify-content:center;font-weight:700;font-size:13px}
+.opt.right{background:#E8F5E9;border-color:var(--green)}
+.opt.right .k{background:var(--green);color:#fff}
+.opt.wrong{background:#FDECEA;border-color:var(--red)}
+.opt.wrong .k{background:var(--red);color:#fff}
+.opt.done{cursor:default}
+.fb{margin-top:16px;border-top:1px dashed var(--line);padding-top:12px;
+display:none;font-size:15px}
+.fb.on{display:block}
+.fb .verdict{font-weight:700;margin-bottom:6px}
+.fb .verdict.ok{color:var(--green)} .fb .verdict.no{color:var(--red)}
+.whyb{color:#2C3A50}
+.acts{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap}
+.btn{border:1px solid var(--line);background:#F1F3F9;color:var(--navy);border-radius:6px;
+padding:11px 16px;font-size:15px;font-weight:600;cursor:pointer;min-height:46px;
+display:inline-flex;align-items:center;gap:8px;text-decoration:none}
+.btn:hover{background:var(--navy);color:#fff}
+.btn.pri{background:var(--navy);color:#fff;border-color:var(--navy)}
+.btn.pri:hover{background:var(--navy-d)}
+audio{height:40px;min-width:180px;flex:1 1 220px}
+.audiorow{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:12px}
+.end{text-align:center;padding:34px 0}
+.end .big{font-size:44px;font-weight:800;color:var(--navy);margin:6px 0 4px}
+.msg{padding:26px;text-align:center;color:var(--grey)}
+footer{padding:18px 0 40px;color:var(--grey);font-size:13px;text-align:center}
+footer a{color:var(--navy)}
+@media (prefers-color-scheme:dark){
+:root{--navy:#0B1035;--navy-d:#070A22;--teal:#4DD0E1;--teal-d:#26A6B4;
+--amber:#FFA726;--amber-d:#C77B10;--ink:#E8EDF7;--grey:#9AA9C4;
+--line:#2C3663;--bg:#0E1226;--green:#66BB6A;--red:#EF5350;}
+body{background:var(--bg);color:var(--ink)}
+header{background:#0B1035}
+.bar{background:#12172F}
+.qbox{background:#141A33;border-color:#242D52}
+.chip{background:#1A2140;border-color:#2C3663;color:#C7D2F0}
+.chip:hover{background:#252D52}
+.chip[aria-pressed="true"]{background:var(--amber);color:#231a05}
+.opt{background:#1A2140;border-color:#2C3663;color:#E8EDF7}
+.opt:hover:not(.done){background:#252D52}
+.opt .k{background:#2C3663;color:#C7D2F0}
+.opt.right{background:#12351A;border-color:var(--green)}
+.opt.wrong{background:#3A1714;border-color:var(--red)}
+.fb .whyb{color:#D2DAEC}
+.term,.score{color:#9FB4FF}
+.btn{background:#1A2140;border-color:#2C3663;color:#C7D2F0}
+.btn:hover{background:var(--teal);color:#04222A}
+.btn.pri{background:var(--teal);color:#04222A;border-color:var(--teal)}
+footer a{color:#9FB4FF}
+}
+@media (max-width:640px){
+header h1{font-size:18px}
+header .sub{font-size:12.5px}
+.qtext{font-size:17.5px}
+.opt{font-size:16px;padding:13px 14px}
+.btn{font-size:14.5px}
+}
+</style></head><body>
+<header><div class="wrap">
+<h1>GNBF5020 術語詳解 · 自我測驗</h1>
+<p class="sub">905 條術語嘅選擇題。撳答案即刻知啱唔啱，仲可以即場聽返嗰條術語。← 返去
+<a href="index.html">有聲版</a></p>
+</div></header>
+<div class="bar"><div class="wrap">
+<div class="prog"><i id="pfill"></i></div>
+<span class="score" id="score">— / —</span>
+<button class="btn" id="shuffle" type="button">重新洗牌</button>
+<button class="btn" id="again" type="button" style="display:none">重做錯題</button>
+</div></div>
+<main><div class="wrap">
+<div id="app"><div class="msg">載入緊試題…</div></div>
+</div></main>
+<footer>GNBF5020 溫習包 · 自我測驗 · 內容版權屬原作者</footer>
+<script>
+(function(){
+  var TYPES={t2m:'英文術語 → 意思',m2t:'意思 → 英文術語',cloze:'句子填充',concept:'概念理解'};
+  var app=document.getElementById('app'), scoreEl=document.getElementById('score'),
+      fill=document.getElementById('pfill'), againBtn=document.getElementById('again');
+  var ALL=[], bank=[], idx=0, right=0, wrongIds=[], answered=false,
+      chapFilter='all', typeFilter='all', order=[], chips=[];
+
+  function el(t,c,h){var e=document.createElement(t); if(c)e.className=c;
+    if(h!==undefined)e.innerHTML=h; return e;}
+  function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+  function pad(n){return (n<10?'0':'')+n;}
+  function shuffled(n){var a=[],i; for(i=0;i<n;i++)a.push(i);
+    for(i=n-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));
+      var t=a[i];a[i]=a[j];a[j]=t;}
+    return a;}
+
+  function load(){
+    fetch('quizzes/manifest.json',{cache:'no-store'}).then(function(r){
+      if(!r.ok) throw new Error('manifest '+r.status);
+      return r.json();
+    }).then(function(m){
+      var files=(m.shards||[]).map(function(s){
+        return (typeof s==='string')?s:s.file;});
+      return Promise.all(files.map(function(f){
+        return fetch('quizzes/'+f,{cache:'no-store'}).then(function(r){
+          if(!r.ok) throw new Error(f+' '+r.status);
+          return r.json();
+        });
+      })).then(function(docs){ return docs; });
+    }).then(function(docs){
+      ALL=[];
+      docs.forEach(function(d){
+        (d.questions||[]).forEach(function(q){
+          q.chapter=(d.chapter===undefined?0:d.chapter);
+          q.chapterTitle=d.title; ALL.push(q);
+        });
+      });
+      if(!ALL.length){ app.innerHTML='<div class="msg">試題未載入到。</div>'; return; }
+      buildControls(docs);
+      start();
+    }).catch(function(e){
+      app.innerHTML='<div class="msg">載入唔到試題（'+esc(e.message)+
+        '）。<br>請確認已經喺 GitHub Pages 上面行。</div>';
+    });
+  }
+
+  function buildControls(docs){
+    var bar=document.querySelector('.bar .wrap');
+    var chapters=[];
+    docs.forEach(function(d){
+      if(chapters.indexOf(d.chapter)<0) chapters.push(d.chapter);});
+    chapters.sort(function(a,b){return a-b;});
+    var c1=el('div','ctl');
+    c1.appendChild(el('span','lab','章節'));
+    var bAll=el('button','chip','全部'); bAll.setAttribute('aria-pressed','true');
+    bAll.dataset.ch='all';
+    bAll.onclick=function(){chapFilter='all';syncChips();start();};
+    c1.appendChild(bAll); chips.push(bAll);
+    chapters.forEach(function(ch){
+      var b=el('button','chip','Ch '+pad(ch));
+      b.setAttribute('aria-pressed','false'); b.dataset.ch=String(ch);
+      b.onclick=function(){chapFilter=b.dataset.ch;syncChips();start();};
+      c1.appendChild(b); chips.push(b);
+    });
+    bar.appendChild(c1);
+    var c2=el('div','ctl');
+    c2.appendChild(el('span','lab','題型'));
+    var tAll=el('button','chip','全部'); tAll.setAttribute('aria-pressed','true');
+    tAll.dataset.t='all';
+    tAll.onclick=function(){typeFilter='all';syncChips();start();};
+    c2.appendChild(tAll); chips.push(tAll);
+    Object.keys(TYPES).forEach(function(t){
+      var b=el('button','chip',TYPES[t]); b.setAttribute('aria-pressed','false');
+      b.dataset.t=t; b.onclick=function(){typeFilter=b.dataset.t;syncChips();start();};
+      c2.appendChild(b); chips.push(b);
+    });
+    bar.appendChild(c2);
+    window.syncChips=function(){
+      chips.forEach(function(b){
+        var on=(b.dataset.ch===undefined||b.dataset.ch===chapFilter) &&
+                (b.dataset.t===undefined||b.dataset.t===typeFilter);
+        b.setAttribute('aria-pressed',on?'true':'false');
+      });
+    };
+    document.getElementById('shuffle').onclick=function(){start();};
+    againBtn.onclick=function(){
+      var w=wrongIds; start(); bank=w; order=bank.map(function(_,i){return i;});
+      idx=0; right=0; render();
+    };
+  }
+
+  function start(){
+    bank=ALL.filter(function(q){
+      return (chapFilter==='all'||String(q.chapter)===chapFilter) &&
+             (typeFilter==='all'||q.type===typeFilter);
+    });
+    order=bank.map(function(_,i){return i;});
+    bank.forEach(function(q){q._ord=null;});
+    for(var i=order.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));
+      var t=order[i];order[i]=order[j];order[j]=t;}
+    idx=0; right=0; wrongIds=[]; answered=false; againBtn.style.display='none';
+    if(!bank.length){ app.innerHTML='<div class="msg">呢個組合冇題。試下揀其他章節。</div>';
+      scoreEl.textContent='— / —'; fill.style.width='0%'; return; }
+    render();
+  }
+
+  function render(){
+    answered=false;
+    var q=bank[order[idx]];
+    var box=el('div','qbox');
+    var meta=el('div','qmeta');
+    meta.appendChild(el('span','badge '+q.type,TYPES[q.type]||q.type));
+    if(q.term) meta.appendChild(el('span','term',esc(q.term)));
+    meta.appendChild(el('span','term','第 '+(idx+1)+' / '+bank.length+' 題'));
+    box.appendChild(meta);
+    box.appendChild(el('div','qtext',esc(q.q)));
+    var opts=el('div','opts');
+    if(!q._ord){q._ord=shuffled((q.options||[]).length);}
+    var correctPos=q._ord.indexOf(q.answer);
+    q._ord.forEach(function(orig,pos){
+      var b=el('button','opt'); b.type='button';
+      b.appendChild(el('span','k','ABCD'[pos]||String(pos+1)));
+      b.appendChild(el('span','',' '+esc(q.options[orig])));
+      b.onclick=function(){choose(b,pos,q,opts,correctPos);};
+      opts.appendChild(b);
+    });
+    box.appendChild(opts);
+    var fb=el('div','fb'); box.appendChild(fb);
+    if(q.audio){
+      var ar=el('div','audiorow');
+      var au=document.createElement('audio'); au.controls=true; au.preload='none';
+      au.src=q.audio;
+      ar.appendChild(au); ar.appendChild(el('span','term','聽聽呢條術語'));
+      box.appendChild(ar);
+    }
+    var acts=el('div','acts');
+    var nx=el('button','btn pri','下一題 ›'); nx.type='button';
+    nx.onclick=function(){idx=(idx+1)%bank.length;render();};
+    acts.appendChild(nx);
+    var back=el('button','btn','‹ 上一題'); back.type='button';
+    back.onclick=function(){idx=(idx-1+bank.length)%bank.length;render();};
+    acts.appendChild(back);
+    box.appendChild(acts);
+    app.innerHTML=''; app.appendChild(box);
+    scoreEl.textContent='啱 '+right+' / '+bank.length;
+    fill.style.width=(100*idx/bank.length)+'%';
+  }
+
+  function choose(btn,i,q,opts,correctPos){
+    if(answered) return; answered=true;
+    var ok=(i===correctPos);
+    if(ok) right++; else wrongIds.push(q);
+    opts.querySelectorAll('.opt').forEach(function(b,j){
+      b.classList.add('done');
+      if(j===correctPos) b.classList.add('right');
+      else if(j===i) b.classList.add('wrong');
+    });
+    var fb=document.querySelector('.fb');
+    fb.innerHTML='<div class="verdict '+(ok?'ok':'no')+'">'+(ok?'✓ 答啱':'✗ 答錯')+
+      '</div><div class="whyb">'+esc(q.why||'')+'</div>';
+    fb.classList.add('on');
+    scoreEl.textContent='啱 '+right+' / '+bank.length;
+    if(idx>=bank.length-1 && wrongIds.length) againBtn.style.display='';
+  }
+
+  load();
+})();
+</script></body></html>
