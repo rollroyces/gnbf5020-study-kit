@@ -17,6 +17,12 @@ header .sub{color:#CFD8DC;font-size:13.5px;margin:0 0 12px}
 header .sub a{color:#FFD08A}
 .ctl{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:10px}
 .ctl .lab{color:#9FB0C4;font-size:12.5px;font-weight:700;margin-right:2px}
+.langbar{display:flex;gap:6px;margin-top:12px;align-items:center}
+.langbtn{border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.08);
+color:#fff;border-radius:5px;padding:6px 14px;font-size:13px;cursor:pointer;
+font-weight:700;min-height:36px}
+.langbtn:hover{background:rgba(255,255,255,.2)}
+.langbtn[aria-pressed="true"]{background:var(--amber);border-color:var(--amber);color:#231a05}
 .chip{border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.1);
 color:#fff;border-radius:5px;padding:7px 11px;font-size:13px;cursor:pointer;
 font-weight:600;min-height:38px;display:inline-flex;align-items:center}
@@ -101,9 +107,12 @@ header .sub{font-size:12.5px}
 }
 </style></head><body>
 <header><div class="wrap">
-<h1>GNBF5020 術語詳解 · 自我測驗</h1>
-<p class="sub">905 條術語嘅選擇題。撳答案即刻知啱唔啱，仲可以即場聽返嗰條術語。← 返去
-<a href="index.html">有聲版</a></p>
+<h1 id="ttl">GNBF5020 術語詳解 · 自我測驗</h1>
+<p class="sub" id="sub">905 條術語嘅選擇題。撳答案即刻知啱唔啱，仲可以即場聽返嗰條術語。← 返去 <a href="index.html">有聲版</a></p>
+<div class="langbar">
+<button class="langbtn" id="langZh" type="button" aria-pressed="true">中文</button>
+<button class="langbtn" id="langEn" type="button" aria-pressed="false">English</button>
+</div>
 </div></header>
 <div class="bar"><div class="wrap">
 <div class="prog"><i id="pfill"></i></div>
@@ -117,7 +126,22 @@ header .sub{font-size:12.5px}
 <footer>GNBF5020 溫習包 · 自我測驗 · 內容版權屬原作者</footer>
 <script>
 (function(){
-  var TYPES={t2m:'英文術語 → 意思',m2t:'意思 → 英文術語',cloze:'句子填充',concept:'概念理解'};
+  var LANG='zh';
+  var STR={zh:{ttl:'GNBF5020 術語詳解 · 自我測驗',
+      sub:'905 條術語嘅選擇題。撳答案即刻知啱唔啱，仲可以即場聽返嗰條術語。← 返去 <a href="index.html">有聲版</a>',
+      score:'啱 ',shuffle:'重新洗牌',redo:'重做錯題',chapter:'章節',type:'題型',
+      all:'全部',next:'下一題 ›',prev:'‹ 上一題',
+      ok:'✓ 答啱',no:'✗ 答錯',empty:'呢個組合冇題。試下揀其他章節。',
+      noq:'試題未載入到。',err:'載入唔到試題（',hint:'請確認已經喺 GitHub Pages 上面行。',
+      types:{t2m:'英文術語 → 意思',m2t:'意思 → 英文術語',cloze:'句子填充',concept:'概念理解'}},
+    en:{ttl:'GNBF5020 Term Guide · Self-test',
+      sub:'905 multiple-choice questions on the terminology. Tap an answer to see if you got it right. ← back to the <a href="index.html">audio edition</a>',
+      score:'',shuffle:'Shuffle',redo:'Redo wrong',chapter:'Chapter',type:'Type',
+      all:'All',next:'Next ›',prev:'‹ Previous',
+      ok:'✓ Correct',no:'✗ Wrong',empty:'No questions for this combination. Try another chapter.',
+      noq:'The questions could not be loaded.',err:'Could not load the questions (',hint:'Please check the site is running on GitHub Pages.',
+      types:{t2m:'Term → meaning',m2t:'Meaning → term',cloze:'Fill in the blank',concept:'Concept'}}};
+  var TYPES=STR.zh.types;
   var app=document.getElementById('app'), scoreEl=document.getElementById('score'),
       fill=document.getElementById('pfill'), againBtn=document.getElementById('again');
   var ALL=[], bank=[], idx=0, right=0, wrongIds=[], answered=false,
@@ -133,14 +157,15 @@ header .sub{font-size:12.5px}
     return a;}
 
   function load(){
-    fetch('quizzes/manifest.json',{cache:'no-store'}).then(function(r){
+    var base=(LANG==='en')?'quizzes/en/':'quizzes/';
+    fetch(base+'manifest.json',{cache:'no-store'}).then(function(r){
       if(!r.ok) throw new Error('manifest '+r.status);
       return r.json();
     }).then(function(m){
       var files=(m.shards||[]).map(function(s){
         return (typeof s==='string')?s:s.file;});
       return Promise.all(files.map(function(f){
-        return fetch('quizzes/'+f,{cache:'no-store'}).then(function(r){
+        return fetch(base+f,{cache:'no-store'}).then(function(r){
           if(!r.ok) throw new Error(f+' '+r.status);
           return r.json();
         });
@@ -153,24 +178,27 @@ header .sub{font-size:12.5px}
           q.chapterTitle=d.title; ALL.push(q);
         });
       });
-      if(!ALL.length){ app.innerHTML='<div class="msg">試題未載入到。</div>'; return; }
+      if(!ALL.length){ app.innerHTML='<div class="msg">'+esc(STR[LANG].noq)+'</div>'; return; }
       buildControls(docs);
       start();
     }).catch(function(e){
-      app.innerHTML='<div class="msg">載入唔到試題（'+esc(e.message)+
-        '）。<br>請確認已經喺 GitHub Pages 上面行。</div>';
+      app.innerHTML='<div class="msg">'+esc(STR[LANG].err+e.message)+'）。<br>'+
+        esc(STR[LANG].hint)+'</div>';
     });
   }
 
   function buildControls(docs){
     var bar=document.querySelector('.bar .wrap');
+    var old=bar.querySelectorAll('.ctl');
+    for(var oi=0;oi<old.length;oi++) old[oi].remove();
+    chips=[];
     var chapters=[];
     docs.forEach(function(d){
       if(chapters.indexOf(d.chapter)<0) chapters.push(d.chapter);});
     chapters.sort(function(a,b){return a-b;});
     var c1=el('div','ctl');
-    c1.appendChild(el('span','lab','章節'));
-    var bAll=el('button','chip','全部'); bAll.setAttribute('aria-pressed','true');
+    c1.appendChild(el('span','lab',STR[LANG].chapter));
+    var bAll=el('button','chip',STR[LANG].all); bAll.setAttribute('aria-pressed','true');
     bAll.dataset.ch='all';
     bAll.onclick=function(){chapFilter='all';syncChips();start();};
     c1.appendChild(bAll); chips.push(bAll);
@@ -182,8 +210,8 @@ header .sub{font-size:12.5px}
     });
     bar.appendChild(c1);
     var c2=el('div','ctl');
-    c2.appendChild(el('span','lab','題型'));
-    var tAll=el('button','chip','全部'); tAll.setAttribute('aria-pressed','true');
+    c2.appendChild(el('span','lab',STR[LANG].type));
+    var tAll=el('button','chip',STR[LANG].all); tAll.setAttribute('aria-pressed','true');
     tAll.dataset.t='all';
     tAll.onclick=function(){typeFilter='all';syncChips();start();};
     c2.appendChild(tAll); chips.push(tAll);
@@ -200,6 +228,8 @@ header .sub{font-size:12.5px}
         b.setAttribute('aria-pressed',on?'true':'false');
       });
     };
+    document.getElementById('shuffle').textContent=STR[LANG].shuffle;
+    againBtn.textContent=STR[LANG].redo;
     document.getElementById('shuffle').onclick=function(){start();};
     againBtn.onclick=function(){
       var w=wrongIds; start(); bank=w; order=bank.map(function(_,i){return i;});
@@ -217,7 +247,7 @@ header .sub{font-size:12.5px}
     for(var i=order.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));
       var t=order[i];order[i]=order[j];order[j]=t;}
     idx=0; right=0; wrongIds=[]; answered=false; againBtn.style.display='none';
-    if(!bank.length){ app.innerHTML='<div class="msg">呢個組合冇題。試下揀其他章節。</div>';
+    if(!bank.length){ app.innerHTML='<div class="msg">'+esc(STR[LANG].empty)+'</div>';
       scoreEl.textContent='— / —'; fill.style.width='0%'; return; }
     render();
   }
@@ -229,7 +259,7 @@ header .sub{font-size:12.5px}
     var meta=el('div','qmeta');
     meta.appendChild(el('span','badge '+q.type,TYPES[q.type]||q.type));
     if(q.term) meta.appendChild(el('span','term',esc(q.term)));
-    meta.appendChild(el('span','term','第 '+(idx+1)+' / '+bank.length+' 題'));
+    meta.appendChild(el('span','term',LANG==='en'?('Question '+(idx+1)+' / '+bank.length):('第 '+(idx+1)+' / '+bank.length+' 題')));
     box.appendChild(meta);
     box.appendChild(el('div','qtext',esc(q.q)));
     var opts=el('div','opts');
@@ -244,7 +274,7 @@ header .sub{font-size:12.5px}
     });
     box.appendChild(opts);
     var fb=el('div','fb'); box.appendChild(fb);
-    if(q.audio){
+    if(q.audio && LANG==='zh'){
       var ar=el('div','audiorow');
       var au=document.createElement('audio'); au.controls=true; au.preload='none';
       au.src=q.audio;
@@ -252,15 +282,15 @@ header .sub{font-size:12.5px}
       box.appendChild(ar);
     }
     var acts=el('div','acts');
-    var nx=el('button','btn pri','下一題 ›'); nx.type='button';
+    var nx=el('button','btn pri',STR[LANG].next); nx.type='button';
     nx.onclick=function(){idx=(idx+1)%bank.length;render();};
     acts.appendChild(nx);
-    var back=el('button','btn','‹ 上一題'); back.type='button';
+    var back=el('button','btn',STR[LANG].prev); back.type='button';
     back.onclick=function(){idx=(idx-1+bank.length)%bank.length;render();};
     acts.appendChild(back);
     box.appendChild(acts);
     app.innerHTML=''; app.appendChild(box);
-    scoreEl.textContent='啱 '+right+' / '+bank.length;
+    scoreEl.textContent=STR[LANG].score+right+' / '+bank.length;
     fill.style.width=(100*idx/bank.length)+'%';
   }
 
@@ -274,13 +304,27 @@ header .sub{font-size:12.5px}
       else if(j===i) b.classList.add('wrong');
     });
     var fb=document.querySelector('.fb');
-    fb.innerHTML='<div class="verdict '+(ok?'ok':'no')+'">'+(ok?'✓ 答啱':'✗ 答錯')+
+    fb.innerHTML='<div class="verdict '+(ok?'ok':'no')+'">'+(ok?STR[LANG].ok:STR[LANG].no)+
       '</div><div class="whyb">'+esc(q.why||'')+'</div>';
     fb.classList.add('on');
-    scoreEl.textContent='啱 '+right+' / '+bank.length;
+    scoreEl.textContent=STR[LANG].score+right+' / '+bank.length;
     if(idx>=bank.length-1 && wrongIds.length) againBtn.style.display='';
   }
 
+  function setLang(l){
+    if(l===LANG) return;
+    LANG=l; TYPES=STR[LANG].types;
+    document.getElementById('langZh').setAttribute('aria-pressed',l==='zh'?'true':'false');
+    document.getElementById('langEn').setAttribute('aria-pressed',l==='en'?'true':'false');
+    document.getElementById('ttl').textContent=STR[LANG].ttl;
+    document.getElementById('sub').innerHTML=STR[LANG].sub;
+    document.getElementById('shuffle').textContent=STR[LANG].shuffle;
+    againBtn.textContent=STR[LANG].redo;
+    document.documentElement.lang=(l==='en')?'en':'zh-Hant-HK';
+    load();
+  }
+  document.getElementById('langZh').onclick=function(){setLang('zh');};
+  document.getElementById('langEn').onclick=function(){setLang('en');};
   load();
 })();
 </script></body></html>
