@@ -123,13 +123,14 @@ header .sub{font-size:12.5px}
 <main><div class="wrap">
 <div id="app"><div class="msg">載入緊試題…</div></div>
 </div></main>
-<footer>GNBF5020 溫習包 · 自我測驗 · 內容版權屬原作者</footer>
+<footer id="ftr">GNBF5020 溫習包 · 自我測驗 · 內容版權屬原作者</footer>
 <script>
 (function(){
   var LANG='zh';
   var STR={zh:{ttl:'GNBF5020 術語詳解 · 自我測驗',
       sub:'905 條術語嘅選擇題。撳答案即刻知啱唔啱，仲可以即場聽返嗰條術語。← 返去 <a href="index.html">有聲版</a>',
       score:'啱 ',shuffle:'重新洗牌',redo:'重做錯題',chapter:'章節',type:'題型',
+      ftr:'GNBF5020 溫習包 · 自我測驗 · 內容版權屬原作者',
       all:'全部',next:'下一題 ›',prev:'‹ 上一題',
       ok:'✓ 答啱',no:'✗ 答錯',empty:'呢個組合冇題。試下揀其他章節。',
       noq:'試題未載入到。',err:'載入唔到試題（',hint:'請確認已經喺 GitHub Pages 上面行。',
@@ -137,6 +138,7 @@ header .sub{font-size:12.5px}
     en:{ttl:'GNBF5020 Term Guide · Self-test',
       sub:'905 multiple-choice questions on the terminology. Tap an answer to see if you got it right. ← back to the <a href="index.html">audio edition</a>',
       score:'',shuffle:'Shuffle',redo:'Redo wrong',chapter:'Chapter',type:'Type',
+      ftr:'GNBF5020 Study Pack · Self-test · Content © the original author',
       all:'All',next:'Next ›',prev:'‹ Previous',
       ok:'✓ Correct',no:'✗ Wrong',empty:'No questions for this combination. Try another chapter.',
       noq:'The questions could not be loaded.',err:'Could not load the questions (',hint:'Please check the site is running on GitHub Pages.',
@@ -317,6 +319,7 @@ header .sub{font-size:12.5px}
     document.getElementById('langZh').setAttribute('aria-pressed',l==='zh'?'true':'false');
     document.getElementById('langEn').setAttribute('aria-pressed',l==='en'?'true':'false');
     document.getElementById('ttl').textContent=STR[LANG].ttl;
+    document.getElementById('ftr').textContent=STR[LANG].ftr;
     document.getElementById('sub').innerHTML=STR[LANG].sub;
     document.getElementById('shuffle').textContent=STR[LANG].shuffle;
     againBtn.textContent=STR[LANG].redo;
