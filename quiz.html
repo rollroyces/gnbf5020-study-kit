@@ -112,6 +112,7 @@ header .sub{font-size:12.5px}
 <div class="langbar">
 <button class="langbtn" id="langZh" type="button" aria-pressed="true">中文</button>
 <button class="langbtn" id="langEn" type="button" aria-pressed="false">English</button>
+<a class="langbtn" href="start.html" style="text-decoration:none">由零開始 →</a>
 </div>
 </div></header>
 <div class="bar"><div class="wrap">
@@ -159,6 +160,22 @@ header .sub{font-size:12.5px}
     return a;}
 
   function load(){
+    var qs=String(location.search||'');
+    if(!window.__langInit){
+      window.__langInit=1;
+      var ml=qs.match(/[?&]lang=(en|zh)/);
+      if(ml&&ml[1]!==LANG){
+        LANG=ml[1]; TYPES=STR[LANG].types;
+        document.getElementById('langZh').setAttribute('aria-pressed',LANG==='zh'?'true':'false');
+        document.getElementById('langEn').setAttribute('aria-pressed',LANG==='en'?'true':'false');
+        document.getElementById('ttl').textContent=STR[LANG].ttl;
+        document.getElementById('sub').innerHTML=STR[LANG].sub;
+        document.getElementById('shuffle').textContent=STR[LANG].shuffle;
+        againBtn.textContent=STR[LANG].redo;
+        document.getElementById('ftr').textContent=STR[LANG].ftr;
+        document.documentElement.lang=(LANG==='en')?'en':'zh-Hant-HK';
+      }
+    }
     var base=(LANG==='en')?'quizzes/en/':'quizzes/';
     fetch(base+'manifest.json',{cache:'no-store'}).then(function(r){
       if(!r.ok) throw new Error('manifest '+r.status);
@@ -182,6 +199,11 @@ header .sub{font-size:12.5px}
       });
       if(!ALL.length){ app.innerHTML='<div class="msg">'+esc(STR[LANG].noq)+'</div>'; return; }
       buildControls(docs);
+      if(!window.__chInit){
+        window.__chInit=1;
+        var mc=qs.match(/[?&]ch=(\d+)/);
+        if(mc){ chapFilter=mc[1]; syncChips(); }
+      }
       start();
     }).catch(function(e){
       app.innerHTML='<div class="msg">'+esc(STR[LANG].err+e.message)+'）。<br>'+
