@@ -7,6 +7,8 @@
 
 本文下面「[所有連結](#所有連結)」一節係完整連結索引 —— 頁面、PDF、短片、專輯、時間碼、題庫，全部都喺度。
 
+> **如果《新手入門指南》睇落太難**：先做 **[由零開始 · 極簡起步](https://rollroyces.github.io/gnbf5020-study-kit/start.html)** —— 8 屏，每屏一個概念，附術語音檔同即時自我檢查，而且會話你點樣跳過嗰 9 頁化學。
+
 ---
 
 ## 由零開始 · 今日 90 分鐘
@@ -32,6 +34,7 @@
 
 | 想做的事 | 點邊個 | 連結 |
 |---|---|---|
+| **完全零基礎，唔知點開始** | **由零開始 · 極簡起步** — 8 屏，每屏一個概念，附音檔同自我檢查 | [開始](https://rollroyces.github.io/gnbf5020-study-kit/start.html) |
 | 連續聽全書 | 頂部專輯橫條嘅 **Ch 1 … Ch 13**（每章約 30–200 分鐘）| [有聲版](https://rollroyces.github.io/gnbf5020-study-kit/index.html) |
 | 連續聽晒 18 個鐘 | **全書連播 · 下載** — 單一檔案，403 MB，落載後用任何播放器播 | [落載](https://github.com/rollroyces/gnbf5020-study-kit/releases/download/v1/ALL_full_book_18h.m4a) |
 | 測下自己記唔記得 | **自我測驗** — 905 條術語，中／英兩版，頂部一按切換 | [開始測驗](https://rollroyces.github.io/gnbf5020-study-kit/quiz.html) |
@@ -50,6 +53,7 @@
 | 頁面 | 連結 |
 |---|---|
 | 主頁（有聲版，905 條播放器 + 專輯橫條）| https://rollroyces.github.io/gnbf5020-study-kit/index.html |
+| **由零開始 · 極簡起步**（8 屏概念 + 術語音檔 + 即時自我檢查）| https://rollroyces.github.io/gnbf5020-study-kit/start.html |
 | 總目錄 Hub | https://rollroyces.github.io/gnbf5020-study-kit/hub.html |
 | 自我測驗（905 題，中／英切換）| https://rollroyces.github.io/gnbf5020-study-kit/quiz.html |
 | 短片索引（12 條）| https://rollroyces.github.io/gnbf5020-study-kit/videos/index.html |
