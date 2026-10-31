@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="zh-Hant-HK">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GNBF5020 由零開始 · 極簡起步</title>
+<style>
+:root{--navy:#1A237E;--navy-d:#12185C;--teal:#00838F;--amber:#FF8F00;--ink:#16233A;--grey:#5A6B85;
+--line:#C5CAE9;--bg:#F7F8FC;--green:#2E7D32;--red:#C62828;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font:16px/1.7 -apple-system,"Helvetica Neue",Arial,"PingFang HK","Noto Sans TC","Microsoft JhengHei",sans-serif}
+header{background:var(--navy);color:#fff;padding:24px 0 20px}
+.wrap{max-width:900px;margin:0 auto;padding:0 16px}
+header h1{margin:0 0 6px;font-size:22px;letter-spacing:.3px}
+header .sub{color:#CFD8DC;font-size:14.5px;margin:0 0 14px}
+.langbar{display:flex;gap:8px;flex-wrap:wrap;margin-top:4px}
+.langbtn{display:inline-block;border:1px solid rgba(255,255,255,.32);background:rgba(255,255,255,.1);
+color:#fff;border-radius:5px;padding:7px 13px;font-size:13.5px;font-weight:600;text-decoration:none}
+.langbtn:hover{background:rgba(255,255,255,.2)}
+.langbtn.pri{background:var(--amber);border-color:var(--amber);color:#231a05}
+.bar{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:9}
+.bar .wrap{display:flex;gap:14px;align-items:center;padding:9px 16px;flex-wrap:wrap}
+.bar b{color:var(--navy);font-size:14px}
+.bar span{color:var(--grey);font-size:13px}
+main{padding:18px 0 60px}
+.intro{background:#fff;border:1px solid var(--line);border-left:5px solid var(--amber);
+border-radius:8px;padding:16px 18px;margin-bottom:22px}
+.intro h2{margin:0 0 8px;font-size:18px;color:var(--navy)}
+.intro p{margin:0 0 10px;font-size:15px}
+.intro ul{margin:8px 0 0;padding-left:20px;font-size:15px}
+.intro li{margin-bottom:7px}
+.skip{background:#FFF8E8;border:1px solid #F3D08A;border-radius:6px;padding:10px 13px;margin:10px 0 0;font-size:14.5px}
+.steps{list-style:none;margin:0;padding:0}
+.step{background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px;margin-bottom:18px;
+transition:border-color .2s,box-shadow .2s}
+.step.done{border-color:#9CC79A;box-shadow:0 0 0 2px #E3F2E1 inset}
+.snum{display:inline-block;background:var(--teal);color:#fff;font-size:12px;font-weight:700;
+border-radius:4px;padding:3px 9px;margin-bottom:9px}
+.step h2{margin:0 0 8px;font-size:20px;color:var(--navy)}
+.big{font-size:17px;font-weight:600;margin:0 0 8px;line-height:1.55}
+.analogy{background:#EEF7F8;border-left:3px solid var(--teal);padding:9px 12px;border-radius:0 5px 5px 0;
+margin:0 0 14px;font-size:15px}
+.analogy b{color:var(--teal-d,#00666F)}
+.terms{display:grid;gap:9px;margin-bottom:15px}
+.term{display:flex;gap:10px;align-items:flex-start;border:1px solid #E4E8F2;border-radius:7px;
+padding:9px 11px;background:#FBFCFF}
+.term .play{flex:0 0 34px;width:34px;height:34px;border-radius:50%;border:1px solid var(--teal);
+background:#fff;color:var(--teal);font-size:13px;cursor:pointer;line-height:1;padding:0}
+.term .play:hover{background:var(--teal);color:#fff}
+.term .play.on{background:var(--teal);color:#fff}
+.tname{font-weight:700;color:var(--navy);font-size:14.5px}
+.tone{font-size:14.5px;color:#3A4A60}
+.check{background:#F4F6FC;border:1px solid #E4E8F2;border-radius:8px;padding:13px 14px;margin-bottom:12px}
+.cq{font-weight:600;font-size:15.5px;margin-bottom:9px}
+.copts{display:grid;gap:7px}
+.copt{text-align:left;background:#fff;border:1px solid var(--line);border-radius:6px;padding:10px 12px;
+font-size:15px;cursor:pointer;min-height:44px;font-family:inherit;color:inherit}
+.copt:hover{border-color:var(--teal)}
+.copt.right{background:#E8F5E9;border-color:var(--green);font-weight:600}
+.copt.wrong{background:#FDECEA;border-color:var(--red)}
+.cexp{margin-top:10px;font-size:14.5px;color:#2C3A50;display:none}
+.cexp.on{display:block}
+.cexp b{color:var(--green)}
+.slinks{display:flex;gap:12px;align-items:center;flex-wrap:wrap;font-size:14px}
+.slinks a{color:var(--teal);font-weight:600;text-decoration:none}
+.slinks a:hover{text-decoration:underline}
+.donebtn{margin-left:auto;border:1px solid var(--teal);background:#fff;color:var(--teal);border-radius:6px;
+padding:9px 15px;font-size:14px;font-weight:700;cursor:pointer;min-height:42px;font-family:inherit}
+.donebtn:hover{background:var(--teal);color:#fff}
+.donebtn.on{background:var(--green);border-color:var(--green);color:#fff}
+.next{background:var(--navy);color:#fff;border-radius:9px;padding:20px 18px;margin-top:6px}
+.next h2{margin:0 0 8px;font-size:19px}
+.next p{margin:0 0 12px;font-size:15px;color:#D7DEF7}
+.next a{display:inline-block;background:var(--amber);color:#231a05;border-radius:6px;padding:11px 17px;
+font-weight:700;text-decoration:none;font-size:15px}
+footer{padding:20px 0 44px;color:var(--grey);font-size:13px;text-align:center}
+footer a{color:var(--navy)}
+@media (prefers-color-scheme:dark){
+:root{--navy:#0B1035;--navy-d:#070A22;--teal:#4DD0E1;--amber:#FFA726;--ink:#E8EDF7;--grey:#9AA9C4;
+--line:#2C3663;--bg:#0E1226;--green:#66BB6A;--red:#EF5350;}
+body{background:var(--bg);color:var(--ink)}
+header{background:#0B1035}
+.bar{background:#12172F}
+.intro,.step{background:#141A33;border-color:#242D52}
+.intro h2,.step h2,.tname,.bar b{color:#9FB4FF}
+.skip{background:#2A2410;border-color:#5C4A14}
+.analogy{background:#10262B;border-left-color:var(--teal)}
+.term{background:#171E38;border-color:#242D52}
+.tone{color:#C3CCE2}
+.check{background:#171E38;border-color:#242D52}
+.copt{background:#1A2140;border-color:#2C3663;color:#E8EDF7}
+.next{background:#0B1035}
+footer a{color:#9FB4FF}
+}
+@media (max-width:640px){
+header h1{font-size:19px}
+.step{padding:15px}
+.step h2{font-size:18px}
+.big{font-size:16px}
+.slinks a{font-size:14px}
+.donebtn{margin-left:0;width:100%}
+}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<h1>GNBF5020 由零開始 · 極簡起步</h1>
+<p class="sub">8 個概念，每個一屏。做完呢 8 屏，你就有晒之後全部內容嘅地基 —— 然後先去讀書本同做題目。</p>
+<div class="langbar">
+<a class="langbtn" href="index.html">← 有聲版</a>
+<a class="langbtn" href="hub.html">總目錄</a>
+<a class="langbtn" href="quiz.html">自我測驗 →</a>
+<a class="langbtn pri" href="pdf/GNBF5020_%E6%96%B0%E6%89%8B%E5%85%A5%E9%96%80%E6%8C%87%E5%8D%97_%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87.pdf">入門指南 PDF</a>
+</div>
+</div></header>
+<div class="bar"><div class="wrap">
+<b id="prog">已完成 0 / 8</b><span>撳每一步最底嘅「我明咗」打勾，進度會記住。撳 ▶ 聽術語（英文發音 + 中文解釋）。</span>
+</div></div>
+<main><div class="wrap">
+
+<section class="intro">
+<h2>你唔需要讀完 216 頁</h2>
+<p>《新手入門指南》係寫畀完全零基礎嘅人，但佢有 216 頁。好消息係：書裡面自己講咗邊啲唔需要讀。</p>
+<ul>
+<li><b>Chapter 1（化學，9 頁）可以跳過。</b>黃教授第一講親口講過：「Please don't memorize all these chemical structure … They would not be included in my exam.」——化學係「理解一次就夠」，唔係背。慳返 9 頁。</li>
+<li><b>Chapter 2（四類 biomolecule，7 頁）要讀。</b>呢 7 頁就係之後全部內容嘅詞彙：糖、脂肪、蛋白質、DNA。</li>
+<li>然後<b>直接跳去 Lecture 1</b>（書本第 68 頁）。</li>
+<li>Chapter 3–6（蛋白質、DNA 染色體、細胞、細胞點運作）<b>留返做查字典</b>：讀到唔明先返去查，唔使次序讀。</li>
+</ul>
+<div class="skip"><b>換句話講：</b>入門指南嘅正常次序係「先打地基，再起樓」。但你而家打地基打得太辛苦，所以改用呢個次序 —— <b>先讀 Chapter 2（7 頁）→ 直接入 Lecture 1</b>，Chapter 3–6 攞嚟查。下面呢 8 屏，就係幫你喺跳過 Chapter 1 之後補返最關鍵嗰 8 個概念。</div>
+</section>
+
+<ol class="steps">
+
+<li class="step" data-step="1">
+<div class="snum">第 1 步</div>
+<h2>細胞係一間工廠</h2>
+<p class="big">一間有控制室、有發電廠、有廠房地板、門口有保安嘅工廠，就係一隻細胞。</p>
+<p class="analogy"><b>比喻：</b>細胞 = 工廠。控制室喺正中央，發電廠喺側邊，廠房地板上面有工人，門口有保安閘。</p>
+<div class="terms">
+<div class="term"><button class="play" data-src="assets/terms/A0660_Plasma_membrane.m4a">▶</button><div><div class="tname">Plasma membrane</div><div class="tone">細胞的外皮。一層脂質雙層，控制進出並帶著受體。</div></div></div>
+<div class="term"><button class="play" data-src="assets/terms/A0654_Nucleus.m4a">▶</button><div><div class="tname">Nucleus</div><div class="tone">控制室。它保管 DNA，並決定哪些基因被讀取。</div></div></div>
+<div class="term"><button class="play" data-src="assets/terms/A0666_Ribosome.m4a">▶</button><div><div class="tname">Ribosome</div><div class="tone">讀 mRNA、把胺基酸一個接一個接起來的機器。</div></div></div>
+<div class="term"><button class="play" data-src="assets/terms/A0643_Mitochondrion.m4a">▶</button><div><div class="tname">Mitochondrion</div><div class="tone">發電廠。它製造大部分 ATP、管制 apoptosis，並且保有自己的 DNA。</div></div></div>
+<div class="term"><button class="play" data-src="assets/terms/A0453_Cytoplasm.m4a">▶</button><div><div class="tname">Cytoplasm</div><div class="tone">細胞裡那團水狀的果凍，幾乎所有化學反應都在裡面發生。</div></div></div>
+</div>
+<div class="check"><div class="cq">試下你明唔明：工廠入面負責「抄食譜」嘅部門係邊個？</div>
+<div class="copts">
+<button class="copt" data-ok="0">Ribosome（廠房地板）</button>
+<button class="copt" data-ok="1">Nucleus（控制室）</button>
+<button class="copt" data-ok="0">Mitochondrion（發電廠）</button>
+<button class="copt" data-ok="0">Plasma membrane（門口閘）</button>
+</div><div class="cexp"></div></div>
+<div class="slinks">
+<a href="pdf/GNBF5020_%E6%96%B0%E6%89%8B%E5%85%A5%E9%96%80%E6%8C%87%E5%8D%97_%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87.pdf#page=47">讀書本第 47 頁（細胞）</a>
+<a href="quiz.html?ch=8">做 Ch 8 題目（101 題）</a>
+<button class="donebtn" data-step="1">我明咗 ✓</button>
+</div>
+</li>
+
+<li class="step" data-step="2">
+<div class="snum">第 2 步</div>
+<h2>DNA 係一本食譜</h2>
+<p class="big">DNA 係一本用四個字母寫嘅說明手冊；基因係當中一頁；染色體係一疊印好嘅手冊。</p>
+<p class="analogy"><b>比喻：</b>DNA = 總說明手冊（A T G C 四個字母）。Gene = 其中一張食譜。Chromosome = 一疊印好嘅手冊。</p>
+<div class="terms">
+<div class="term"><button class="play" data-src="assets/terms/A0027_DNA_deoxyribonucleic_acid.m4a">▶</button><div><div class="tname">DNA (deoxyribonucleic acid)</div><div class="tone">總說明手冊，用四個字母寫成，存放在細胞核裡。</div></div></div>
+<div class="term"><button class="play" data-src="assets/terms/A0181_Gene.m4a">▶</button><div><div class="tname">Gene</div><div class="tone">一張食譜。一段指定一件產品的 DNA。</div></div></div>
+<div class="term"><button class="play" data-src="assets/terms/A0160_Chromosome.m4a">▶</button><div><div class="tname">Chromosome</div><div class="tone">基因組的一包好印好的手冊。</div></div></div>
+<div class="term"><button class="play" data-src="assets/terms/A0057_Nucleotide.m4a">▶</button><div><div class="tname">Nucleotide</div><div class="tone">一個鹼基加一個糖加一個磷酸。DNA 與 RNA 的建材。</div></div></div>
+<div class="term"><button class="play" data-src="assets/terms/A0157_Base_pairing.m4a">▶</button><div><div class="tname">Base pairing</div><div class="tone">DNA 鹼基配對的規則：A 配 T、G 配 C。</div></div></div>
+</div>
+<div class="check"><div class="cq">試下你明唔明：點解鹼基配對規則咁重要？</div>
+<div class="copts">
+<button class="copt" data-ok="1">因為 A 配 T、G 配 C，令兩條 DNA 穩定黐實、可以保存同複製</button>
+<button class="copt" data-ok="0">因為咁 DNA 就冇晒鹼基可以配對</button>
+<button class="copt" data-ok="0">因為配對規則決定蛋白質摺埋嘅形狀</button>
+<button class="copt" data-ok="0">因為 G 配 C 嘅時候會產生 ATP</button>
+</div><div class="cexp"></div></div>
+<div class="slinks">
+<a href="pdf/GNBF5020_%E6%96%B0%E6%89%8B%E5%85%A5%E9%96%80%E6%8C%87%E5%8D%97_%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87.pdf#page=37">讀書本第 37 頁（DNA）</a>
+<a href="quiz.html?ch=3">做 Ch 3 題目（88 題）</a>
+<button class="donebtn" data-step="2">我明咗 ✓</button>
+</div>
+</li>
+
+<li class="step" data-step="3">
+<div class="snum">第 3 步</div>
+<h2>蛋白質係機器</h2>
+<p class="big">蛋白質係用珠子串成嘅鏈，摺埋咗變成一部機 —— 形狀決定佢做咩。</p>
+<p class="analogy"><b>比喻：</b>胺基酸 = 珠子；側鏈 = 每粒珠上面嘅凸起，決定條鏈點摺。摺好咗就係一部有特定功能嘅機器。</p>
+<div class="terms">
+<div class="term"><button class="play" data-src="assets/terms/A0065_Protein.m4a">▶</button><div><div class="tname">Protein</div><div class="tone">由一串胺基酸珠鏈摺疊成的機器，形狀決定它做甚麼。</div></div></div>
+<div class="term"><button class="play" data-src="assets/terms/A0089_Amino_acid.m4a">▶</button><div><div class="tname">Amino acid</div><div class="tone">構成蛋白質的二十種小分子，每種帶著決定摺疊方式的側鏈。</div></div></div>
+<div class="term"><button class="play" data-src="assets/terms/A0110_Fold_protein_folding.m4a">▶</button><div><div class="tname">Fold (protein folding)</div><div class="tone">一條胺基酸鏈扭成特定三維形狀、因而能完成它工作的過程。</div></div></div>
+<div class="term"><button class="play" data-src="assets/terms/A0106_Enzyme.m4a">▶</button><div><div class="tname">Enzyme</div><div class="tone">自己不會被消耗、卻能讓化學反應加快的蛋白質。</div></div></div>
+<div class="term"><button class="play" data-src="assets/terms/A0086_Active_site.m4a">▶</button><div><div class="tname">Active site</div><div class="tone">酵素上那個讓受質剛好卡進去的凹槽，化學反應就在那裡發生。</div></div></div>
+<div class="term"><button class="play" data-src="assets/terms/A0122_Misfolding.m4a">▶</button><div><div class="tname">Misfolding</div><div class="tone">沒有摺成正確三維形狀的蛋白質。這是治療性蛋白質的風險之一。</div></div></div>
+</div>
+<div class="check"><div class="cq">試下你明唔明：酵素點樣加快反應？</div>
+<div class="copts">
+<button class="copt" data-ok="0">因為佢用完就消失，所以反應加快</button>
+<button class="copt" data-ok="1">因為佢上面有個 active site，受質啱啱好卡入去，反應就喺度發生</button>
+<button class="copt" data-ok="0">因為酵素會產生 ATP 幫手</button>
+<button class="copt" data-ok="0">因為蛋白質摺得越平均，反應越快</button>
+</div><div class="cexp"></div></div>
+<div class="slinks">
+<a href="pdf/GNBF5020_%E6%96%B0%E6%89%8B%E5%85%A5%E9%96%80%E6%8C%87%E5%8D%97_%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87.pdf#page=26">讀書本第 26 頁（蛋白質）</a>
+<a href="quiz.html?ch=2">做 Ch 2 題目（65 題）</a>
+<button class="donebtn" data-step="3">我明咗 ✓</button>
+</div>
+</li>
+
+<li class="step" data-step="4">
+<div class="snum">第 4 步</div>
+<h2>ATP 係錢，磷酸化係開關</h2>
+<p class="big">細胞用 ATP 付款；酵素喺蛋白質上面加一個磷酸，就係「打開」個開關。</p>
+<p class="analogy"><b>比喻：</b>ATP = 銀紙。Kinase = 幫你喺部機上面貼「開」字貼紙嘅人。Phosphatase = 撕走張貼紙，部機就閂咗。</p>
+<div class="terms">
+<div class="term"><button class="play" data-src="assets/terms/A0009_ATP_adenosine_triphosphate.m4a">▶</button><div><div class="tname">ATP (adenosine triphosphate)</div><div class="tone">細胞可花費的能量；切掉末端磷酸就釋出動力。</div></div></div>
+<div class="term"><button class="play" data-src="assets/terms/A0031_Energy.m4a">▶</button><div><div class="tname">Energy</div><div class="tone">做功的能力。在細胞裡它來自代謝反應的淨釋放。</div></div></div>
+<div class="term"><button class="play" data-src="assets/terms/A0044_Kinase.m4a">▶</button><div><div class="tname">Kinase</div><div class="tone">在另一個蛋白質上加磷酸基的酵素，通常是把它打開。</div></div></div>
+<div class="term"><button class="play" data-src="assets/terms/A0062_Phosphorylation.m4a">▶</button><div><div class="tname">Phosphorylation</div><div class="tone">附上磷酸基，通常是打開一個蛋白質的開關。</div></div></div>
+<div class="term"><button class="play" data-src="assets/terms/A0060_Phosphatase.m4a">▶</button><div><div class="tname">Phosphatase</div><div class="tone">拿掉磷酸基、把蛋白質切回關閉狀態的酵素。</div></div></div>
+</div>
+<div class="check"><div class="cq">試下你明唔明：MST1 / LATS1 令 YAP 停喺細胞核外，靠嘅係？</div>
+<div class="copts">
+<button class="copt" data-ok="1">加磷酸（phosphorylation）—— 磷酸化咗嘅 YAP 會被 14-3-3 扣喺細胞質，跟住降解</button>
+<button class="copt" data-ok="0">拆走磷酸（dephosphorylation）</button>
+<button class="copt" data-ok="0">把 DNA 剪短一截</button>
+<button class="copt" data-ok="0">直接消耗 ATP 令 YAP 冇電</button>
+</div><div class="cexp"></div></div>
+<div class="slinks">
+<a href="pdf/GNBF5020_%E6%96%B0%E6%89%8B%E5%85%A5%E9%96%80%E6%8C%87%E5%8D%97_%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87.pdf#page=19">讀書本第 19 頁（四類 biomolecule）</a>
+<a href="quiz.html?ch=1">做 Ch 1 題目（83 題）</a>
+<button class="donebtn" data-step="4">我明咗 ✓</button>
+</div>
+</li>
+
+<li class="step" data-step="5">
+<div class="snum">第 5 步</div>
+<h2>DNA 點樣抄落去</h2>
+<p class="big">雙股打開成一個 Y 字，一邊一路抄，另一邊要砌埋短段先得。</p>
+<p class="analogy"><b>比喻：</b>抄書。Y 字嗰個開口 = 複製叉（replication fork）。一路抄得順嗰條 = leading strand；抄唔順、要用短段砌嗰條 = lagging strand。</p>
+<div class="terms">
+<div class="term"><button class="play" data-src="assets/terms/A0334_Semi_conservative_replication.m4a">▶</button><div><div class="tname">Semi-conservative replication</div><div class="tone">每個新的 DNA 雙股，都是一條舊股加一條新股。</div></div></div>
+<div class="term"><button class="play" data-src="assets/terms/A0330_Replication_fork.m4a">▶</button><div><div class="tname">Replication fork</div><div class="tone">雙螺旋被解開、一邊解一邊複製的 Y 形開口。</div></div></div>
+<div class="term"><button class="play" data-src="assets/terms/A0338_Template_strand.m4a">▶</button><div><div class="tname">Template strand</div><div class="tone">複製時被讀的那一條 DNA 股。</div></div></div>
+<div class="term"><button class="play" data-src="assets/terms/A0314_Leading_strand.m4a">▶</button><div><div class="tname">Leading strand</div><div class="tone">可以一路順暢地連續複製的那條鏈。</div></div></div>
+<div class="term"><button class="play" data-src="assets/terms/A0313_Lagging_strand.m4a">▶</button><div><div class="tname">Lagging strand</div><div class="tone">無法連續複製、必須用短 Okazaki fragments 拼出來的那條鏈。</div></div></div>
+<div class="term"><button class="play" data-src="assets/terms/A0320_Okazaki_fragment.m4a">▶</button><div><div class="tname">Okazaki fragment</div><div class="tone">在 lagging strand 上先造出來、之後再接合起來的短段 DNA。</div></div></div>
+<div class="term"><button class="play" data-src="assets/terms/A0303_DNA_polymerase.m4a">▶</button><div><div class="tname">DNA polymerase</div><div class="tone">建造新 DNA 鏈的酵素，只會沿 5 prime 到 3 prime 的方向加入核苷酸。</div></div></div>
+</div>
+<div class="check"><div class="cq">試下你明唔明：點解 lagging strand 要用短片段砌？</div>
+<div class="copts">
+<button class="copt" data-ok="1">因為 DNA polymerase 只能 5′→3′ 方向加核苷酸，lagging strand 個方向行唔到</button>
+<button class="copt" data-ok="0">因為 lagging strand 冇 template strand</button>
+<button class="copt" data-ok="0">因為短片段比較快</button>
+<button class="copt" data-ok="0">因為要先複製過 DNA 才可以砌</button>
+</div><div class="cexp"></div></div>
+<div class="slinks">
+<a href="pdf/GNBF5020_%E6%96%B0%E6%89%8B%E5%85%A5%E9%96%80%E6%8C%87%E5%8D%97_%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87.pdf#page=130">讀書本第 130 頁（Lecture 4）</a>
+<a href="quiz.html?ch=5">做 Ch 5 題目（43 題）</a>
+<button class="donebtn" data-step="5">我明咗 ✓</button>
+</div>
+</li>
+
+<li class="step" data-step="6">
+<div class="snum">第 6 步</div>
+<h2>DNA 會損壞，系統會修</h2>
+<p class="big">DNA 係一本手抄嘅書，會有錯字、有水漬、有斷頁。唔同嘅損壞，有唔同嘅修理法。</p>
+<p class="analogy"><b>比喻：</b>錯咗一個字 → 擦掉個字補返；整爛咗一大段 → 成段剪走重抄；抄完發現對唔上 → 校對；斷咗兩版 → 照另一份抄返（HR）或者直接黐返埋（NHEJ）。</p>
+<div class="terms">
+<div class="term"><button class="play" data-src="assets/terms/A0350_Base_excision_repair_BER.m4a">▶</button><div><div class="tname">Base excision repair (BER)</div><div class="tone">修復單一受損鹼基的路徑：把那個鹼基切掉再補回來。</div></div></div>
+<div class="term"><button class="play" data-src="assets/terms/A0393_Nucleotide_excision_repair_NER.m4a">▶</button><div><div class="tname">Nucleotide excision repair (NER)</div><div class="tone">修復 UV dimer 之類 bulky 損傷的路徑，它把整段鏈切掉。</div></div></div>
+<div class="term"><button class="play" data-src="assets/terms/A0387_Mismatch_repair_MMR.m4a">▶</button><div><div class="tname">Mismatch repair (MMR)</div><div class="tone">修正複製之後留下的錯誤的修復路徑。</div></div></div>
+<div class="term"><button class="play" data-src="assets/terms/A0375_Homologous_recombination_HR.m4a">▶</button><div><div class="tname">Homologous recombination (HR)</div><div class="tone">以配對的姊妹染色分體作模板、對斷裂染色體進行的高保真修復。只在 S 與 G2 運作。</div></div></div>
+<div class="term"><button class="play" data-src="assets/terms/A0392_Non_homologous_end_joining_NHEJ.m4a">▶</button><div><div class="tname">Non-homologous end joining (NHEJ)</div><div class="tone">修復斷裂染色體時不需要模板、因此容易出錯的路徑。它建立起抗體的多樣性。</div></div></div>
+</div>
+<div class="check"><div class="cq">試下你明唔明：HR 同 NHEJ 最緊要嘅分別係咩？</div>
+<div class="copts">
+<button class="copt" data-ok="1">HR 要用姊妹染色分體做模板（所以高保真、只喺 S/G2 運作）；NHEJ 唔使模板，所以容易出錯</button>
+<button class="copt" data-ok="0">HR 修單一鹼基，NHEJ 修大段損傷</button>
+<button class="copt" data-ok="0">NHEJ 比較快，所以細胞比較常用</button>
+<button class="copt" data-ok="0">兩者完全一樣，只係名稱不同</button>
+</div><div class="cexp"></div></div>
+<div class="slinks">
+<a href="pdf/GNBF5020_%E6%96%B0%E6%89%8B%E5%85%A5%E9%96%80%E6%8C%87%E5%8D%97_%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87.pdf#page=130">讀書本第 130 頁（Lecture 4）</a>
+<a href="quiz.html?ch=6">做 Ch 6 題目（82 題）</a>
+<button class="donebtn" data-step="6">我明咗 ✓</button>
+</div>
+</li>
+
+<li class="step" data-step="7">
+<div class="snum">第 7 步</div>
+<h2>基因係點樣開關㗎</h2>
+<p class="big">DNA 係食譜，但係要有人「按開關」先會有人抄。</p>
+<p class="analogy"><b>比喻：</b>Promoter = 「由呢一行開始抄」嘅指示牌。Enhancer = 「抄多啲」嘅音量掣。兩者都係喺 DNA 上面（cis）。而 trans factor 係喺細胞質度造好、飄入去嘅蛋白質，遠至隔幾條染色體都影響到。</p>
+<div class="terms">
+<div class="term"><button class="play" data-src="assets/terms/A0469_Gene_expression.m4a">▶</button><div><div class="tname">Gene expression</div><div class="tone">把基因打開、抄出訊息、再造出蛋白質的整個過程。</div></div></div>
+<div class="term"><button class="play" data-src="assets/terms/A0567_Transcription.m4a">▶</button><div><div class="tname">Transcription</div><div class="tone">把 DNA 裡的食譜抄成一份可以帶出去用的工作訊息。</div></div></div>
+<div class="term"><button class="play" data-src="assets/terms/A0123_mRNA_messenger_RNA.m4a">▶</button><div><div class="tname">mRNA (messenger RNA)</div><div class="tone">一份食譜的影印本，從細胞核送到工廠地板。</div></div></div>
+<div class="term"><button class="play" data-src="assets/terms/A0553_Splicing.m4a">▶</button><div><div class="tname">Splicing</div><div class="tone">把 pre-mRNA 裡的 intron 剪掉、exon 接起來，做出成熟 mRNA。</div></div></div>
+<div class="term"><button class="play" data-src="assets/terms/A0528_Promoter.m4a">▶</button><div><div class="tname">Promoter</div><div class="tone">告訴 RNA polymerase 從哪裡開始的 DNA 字詞。</div></div></div>
+<div class="term"><button class="play" data-src="assets/terms/A0462_Enhancer.m4a">▶</button><div><div class="tname">Enhancer</div><div class="tone">不論它相對於基因座落在哪裡、都能提高轉錄量的 DNA 序列。</div></div></div>
+<div class="term"><button class="play" data-src="assets/terms/A0445_Cis_regulatory_element.m4a">▶</button><div><div class="tname">Cis-regulatory element</div><div class="tone">promoter、enhancer、silencer 這類 DNA 序列，只調控它所在的那條 DNA 上的基因。</div></div></div>
+<div class="term"><button class="play" data-src="assets/terms/A0566_Trans_acting_factor.m4a">▶</button><div><div class="tname">Trans-acting factor</div><div class="tone">可以擴散的蛋白質，能作用在別處甚至別條染色體上的基因。</div></div></div>
+</div>
+<div class="check"><div class="cq">試下你明唔明：promoter 同 enhancer 有咩唔同？</div>
+<div class="copts">
+<button class="copt" data-ok="1">Promoter 話明「由呢度開始抄」；enhancer 係加多啲轉錄量，位置相對基因唔咁緊要</button>
+<button class="copt" data-ok="0">兩者都係 mRNA 上面嘅一段</button>
+<button class="copt" data-ok="0">Promoter 喺蛋白質上面，enhancer 喺 DNA 上面</button>
+<button class="copt" data-ok="0">Enhancer 一定要喺基因上游，promoter 可以喺任何位置</button>
+</div><div class="cexp"></div></div>
+<div class="slinks">
+<a href="pdf/GNBF5020_%E6%96%B0%E6%89%8B%E5%85%A5%E9%96%80%E6%8C%87%E5%8D%97_%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87.pdf#page=154">讀書本第 154 頁（Lecture 5）</a>
+<a href="quiz.html?ch=7">做 Ch 7 題目（158 題）</a>
+<button class="donebtn" data-step="7">我明咗 ✓</button>
+</div>
+</li>
+
+<li class="step" data-step="8">
+<div class="snum">第 8 步</div>
+<h2>癌症係寫錯咗嘅字</h2>
+<p class="big">DNA 係印好嘅手冊，突變就係錯字。錯喺重要字眼 = driver；搭順風車 = passenger。</p>
+<p class="analogy"><b>比喻：</b>手冊第 12 頁「蛋白質」印錯咗一個字，成部書就行唔到 —— 呢個係 driver。第 900 頁印錯個字，冇人睇 —— passenger。Cell 有兩個煞車同一個油門：Tumour suppressor 係煞車，Oncogene 係油門。</p>
+<div class="terms">
+<div class="term"><button class="play" data-src="assets/terms/A0200_Mutation.m4a">▶</button><div><div class="tname">Mutation</div><div class="tone">印刷好的手冊裡的一個錯字。</div></div></div>
+<div class="term"><button class="play" data-src="assets/terms/A0173_Driver.m4a">▶</button><div><div class="tname">Driver</div><div class="tone">給細胞生長優勢的突變。重要字詞裡的一個錯字。</div></div></div>
+<div class="term"><button class="play" data-src="assets/terms/A0206_Passenger.m4a">▶</button><div><div class="tname">Passenger</div><div class="tone">一個搭便車的突變，自己不造成生長優勢。</div></div></div>
+<div class="term"><button class="play" data-src="assets/terms/A0298_Tumor_suppressor.m4a">▶</button><div><div class="tname">Tumor suppressor</div><div class="tone">正常工作時負責約束分裂的基因；失去它，細胞就會 runaway。</div></div></div>
+<div class="term"><button class="play" data-src="assets/terms/A0801_Oncogene.m4a">▶</button><div><div class="tname">Oncogene</div><div class="tone">一旦被打開得太過頭就推動細胞分裂的基因。是突變後的 driver。</div></div></div>
+</div>
+<div class="check"><div class="cq">試下你明唔明：點解要分清楚 driver 同 passenger？</div>
+<div class="copts">
+<button class="copt" data-ok="1">因為要搵出真正推動腫瘤生長嗰個變化，標靶藥同研究先對得着焦點</button>
+<button class="copt" data-ok="0">因為 passenger 比較容易醫</button>
+<button class="copt" data-ok="0">因為 driver 一定發生喺早期</button>
+<button class="copt" data-ok="0">因為兩者其實冇分別</button>
+</div><div class="cexp"></div></div>
+<div class="slinks">
+<a href="pdf/GNBF5020_%E6%96%B0%E6%89%8B%E5%85%A5%E9%96%80%E6%8C%87%E5%8D%97_%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87.pdf#page=111">讀書本第 111 頁（Lecture 3）</a>
+<a href="quiz.html?ch=10">做 Ch 10 題目（48 題）</a>
+<button class="donebtn" data-step="8">我明咗 ✓</button>
+</div>
+</li>
+
+</ol>
+
+<section class="next">
+<h2>做完 8 步，之後點做？</h2>
+<p>① 讀入門指南 Chapter 2（四類 biomolecule，7 頁）→ ② 直接跳去 Lecture 1（第 68 頁）→ ③ 讀到唔明先返 Chapter 3–6 查 → ④ 每讀完一章，做對應嘅測驗章（閉卷、用英文作答）。</p>
+<a href="pdf/GNBF5020_%E6%96%B0%E6%89%8B%E5%85%A5%E9%96%80%E6%8C%87%E5%8D%97_%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87.pdf#page=19">開入門指南 Chapter 2 →</a>
+</section>
+
+</div></main>
+<footer>GNBF5020 溫習包 · 由零開始 · 內容版權屬原作者</footer>
+<script>
+var EXP={
+1:{yes:'控制室（Nucleus）保管 DNA，並決定邊個基因被讀取 —— 所以「抄食譜」係控制室做嘅事。',
+   no:'工人（Ribosome）係負責「砌」蛋白質，唔係抄食譜；抄食譜（transcription）係控制室嘅工作。'},
+2:{yes:'A 配 T、G 配 C 令兩條 DNA 穩定黐實 —— 呢個就係 DNA 可以保存同複製嘅基礎。鹼基配錯咗，就係 Mismatch repair 要修嘅嘢。',
+   no:'配對規則唔係決定蛋白質形狀嗰一層；蛋白質嘅形狀係由胺基酸側鏈點摺決定。'},
+3:{yes:'酵素靠 active site 嘅形狀 —— 受質啱啱好卡埋入去，反應就喺度發生。所以佢加快反應，但自己唔會被消耗。',
+   no:'酵素唔會產生 ATP，亦都唔係靠「摺得平均」。'},
+4:{yes:'MST1 / LATS1 係 kinase，佢哋加磷酸（phosphorylation）落 YAP。磷酸化咗嘅 YAP 就被 14-3-3 扣喺細胞質，跟住降解 —— 所以 YAP 入唔到核，細胞就唔會繼續生長。',
+   no:'拆走磷酸（phosphatase）係熄掣嗰個方向，同今次相反。'},
+5:{yes:'DNA polymerase 淨係識 5′→3′ 方向加核苷酸。Lagging strand 個方向行唔到，所以要砌一段段 Okazaki fragment，再接合埋。',
+   no:'Lagging strand 一樣有 template strand；砌短段唔係因為快，亦唔係要等 DNA 先抄好。'},
+6:{yes:'HR 要搵姊妹染色分體做模板，所以高保真，但只喺 S/G2（先有姊妹染色分體）先做到。NHEJ 唔使模板，邊個時期都做得，但容易接錯。',
+   no:'BER 修單一鹼基、NER 修 bulky lesion，同「斷裂染色體」係唔同嘅題目。'},
+7:{yes:'Promoter 係「由呢度開始抄」嘅指示牌；enhancer 係「抄多啲」嘅音量掣，佢可以喺基因上游，或者隔好遠。',
+   no:'兩者都係 DNA 上面嘅序列（Cis elements），唔係蛋白質 —— 蛋白質嗰啲叫 trans-acting factor。'},
+8:{yes:'因為標靶治療要對住真正推動生長嗰個變化 —— 所以要把 CNV 圖譜同 mRNA 表現數據整合，搵出又擴增又高表達嗰啲區域。',
+   no:'Driver 同 passenger 唔係按發生早晚分，而係按有冇畀到生長優勢分。'}
+};
+(function(){
+  var KEY='gnbf5020.start.done';
+  function done(){ try{ return JSON.parse(localStorage.getItem(KEY)||'[]'); }catch(e){ return []; } }
+  function save(a){ try{ localStorage.setItem(KEY, JSON.stringify(a)); }catch(e){} }
+  function mark(n,on){
+    var a=done(), i=a.indexOf(n);
+    if(on&&i<0) a.push(n); if(!on&&i>=0) a.splice(i,1);
+    save(a); return a;
+  }
+  var audio=null;
+  document.querySelectorAll('.play').forEach(function(b){
+    b.addEventListener('click',function(){
+      if(audio){ audio.pause(); document.querySelectorAll('.play.on').forEach(function(x){x.classList.remove('on');}); }
+      audio=new Audio(b.dataset.src);
+      b.classList.add('on');
+      audio.play();
+      audio.onended=function(){ b.classList.remove('on'); };
+    });
+  });
+  document.querySelectorAll('.step').forEach(function(step){
+    var n=step.dataset.step;
+    var exp=step.querySelector('.cexp');
+    var opts=step.querySelectorAll('.copt');
+    var ok=step.querySelector('.copt[data-ok="1"]');
+    opts.forEach(function(o){
+      o.addEventListener('click',function(){
+        opts.forEach(function(x){ x.classList.remove('right','wrong'); });
+        var good=o.dataset.ok==='1';
+        o.classList.add(good?'right':'wrong');
+        if(!good&&ok) ok.classList.add('right');
+        var e=EXP[n]||{};
+        exp.innerHTML = good
+          ? '<b>✓ 啱。</b> ' + (e.yes||'')
+          : '<b style="color:var(--red)">✗ 唔啱。</b> ' + (e.no||'再諗多次。');
+        exp.classList.add('on');
+      });
+    });
+    exp.setAttribute('data-yes', exp.getAttribute('data-yes')||'');
+    var btn=step.querySelector('.donebtn');    function paint(a){
+      var on=a.indexOf(n)>=0;
+      btn.classList.toggle('on',on);
+      btn.textContent=on?'已完成 ✓':'我明咗 ✓';
+      step.classList.toggle('done',on);
+      document.getElementById('prog').textContent='已完成 '+a.length+' / 8';
+    }
+    btn.addEventListener('click',function(){
+      paint(mark(n,btn.classList.contains('on')?false:true));
+    });
+    paint(done());
+  });
+})();
+</script>
+</body>
+</html>
