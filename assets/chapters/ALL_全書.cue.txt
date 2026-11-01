@@ -1,0 +1,934 @@
+GNBF5020 術語詳解 · 全書連播
+專輯：assets/chapters/ALL_全書.m4a
+總長度：1089.9 分鐘（929 段）
+
+0:00.00  第1章 化學與生物分子（開場）
+0:05.24  Ch 1 本章敘述
+10:21.65  ADP (adenosine diphosphate)
+11:26.53  Amp
+12:13.62  AMP (adenosine monophosphate)
+13:14.37  Anabolism
+14:10.95  asparagine
+15:17.99  aspartic acid
+16:06.17  Atom
+17:01.41  Atomic nucleus
+17:55.35  ATP (adenosine triphosphate)
+19:01.92  Base
+19:59.16  Biomolecule
+21:05.33  Carbohydrate
+22:17.00  Carbon
+22:50.60  Catabolism
+23:46.43  Cellulose
+24:41.73  CHO cell
+25:56.28  Cholesterol
+26:56.66  Codon optimisation
+28:00.90  Codon usage
+28:56.90  Codon-usage bias
+30:05.60  Compound
+31:01.54  Contact inhibition
+32:00.03  Covalent bond
+32:55.83  DAG
+33:51.16  Diffusion
+34:49.65  Disaccharide
+35:54.16  DNA (deoxyribonucleic acid)
+37:10.33  Electron
+38:15.72  Electron shell
+39:26.83  Endotoxin
+40:46.63  Energy
+41:53.85  Fatty acid
+43:08.85  Fatty-acid chain
+44:05.20  Functional group
+45:09.40  Glucose
+46:13.45  Glycogen
+47:28.44  Glycosidic bond
+48:32.01  High specific heat
+49:38.13  Hippo pathway
+51:01.67  Hydrogen bond
+52:11.67  Ionic bond
+53:16.57  iso-aspartic acid
+54:14.83  IκB kinase (IKK)
+55:31.48  Kinase
+56:26.27  Lipid
+57:28.27  Lipid bilayer
+58:15.38  Lipoprotein
+58:58.36  LPS (lipopolysaccharide)
+60:13.38  Macromolecule
+61:00.81  Metabolism
+61:54.61  Molecular biology
+62:43.92  Molecule
+63:23.45  Monosaccharide
+64:27.52  Neutron
+65:10.35  Nucleic acid
+65:57.36  Nucleoside
+66:53.78  Nucleotide
+67:47.97  Oxidation
+68:29.40  pH
+69:22.56  Phosphatase
+70:09.60  Phospholipid
+71:02.03  Phosphorylation
+71:49.40  Polarity
+72:40.96  Polysaccharide
+73:26.58  Protein
+74:35.20  Protein kinase
+75:53.70  Proton
+76:58.21  Pyrogen
+78:00.50  Pyruvate
+79:14.24  Reduction
+80:27.79  RNA (ribonucleic acid)
+81:40.46  Septic shock
+83:04.71  Solvent
+84:09.23  Starch
+85:22.69  Start codon
+86:30.15  Stop codon
+87:40.07  succinimide
+88:39.48  Sugar (carbohydrate)
+89:43.85  Sugar-phosphate backbone
+90:46.36  TLR4
+92:19.08  Triglyceride
+93:24.25  Unsaturated fatty acid
+94:33.76  Water
+95:44.38  第2章 蛋白質與酵素（開場）
+95:49.06  Ch 2 本章敘述
+106:24.16  2D-PAGE
+107:18.05  Activation energy
+108:23.96  Active site
+109:23.70  Allostery
+110:23.19  Alpha helix (alpha-helix)
+111:21.24  Amino acid
+112:19.15  Angstrom
+113:23.84  Antibody
+114:45.79  Antibody-dependent cellular cytotoxicity (ADCC)
+115:55.26  Antigen
+116:55.11  arginine
+117:44.08  Beta sheet (beta-sheet)
+118:50.75  C-terminus
+119:50.60  CDR1, CDR2 and CDR3
+120:56.93  Chaperone
+121:53.79  Codon
+122:56.32  cysteine
+123:38.45  Deamidation
+124:48.98  Disulfide bond
+126:04.11  DNA-binding domain (DBD)
+127:23.33  Edman degradation
+128:39.50  Endoplasmic reticulum (ER)
+129:45.87  Enzyme
+130:57.31  Epitope
+132:06.65  Fab fragment
+133:18.03  Fc fragment
+134:36.70  Fold (protein folding)
+135:50.54  Fv fragment
+136:55.07  Glycine
+137:45.00  Heavy chain
+139:05.03  IgG4
+140:19.00  Inclusion body
+141:30.58  Isotype
+142:41.07  LC-MS/MS
+143:41.30  Ligand-binding domain (LBD)
+144:43.55  Light chain
+145:43.15  Mass spectrometry
+146:31.88  Membrane protein
+147:32.79  Misfolding
+148:23.46  mRNA (messenger RNA)
+149:18.55  N-terminal domain (NTD)
+150:15.39  N-terminal signal peptide
+151:07.11  N-terminus
+151:56.49  Natural killer cell (NK cell)
+152:53.61  Peptide
+153:39.00  Peptide bond
+154:32.93  Polypeptide
+155:19.80  Post-translational modification
+156:18.66  Primary structure
+157:08.87  Protein domain
+158:12.44  Proteome
+159:38.99  Quaternary structure
+160:39.33  R-group (side chain)
+161:42.23  SDS-PAGE
+163:01.99  Secondary structure
+164:13.97  Secretory pathway
+165:28.82  Signal peptide
+166:33.29  Substrate
+167:38.01  Subunit
+168:33.03  Tertiary structure
+169:41.42  Variable region
+170:47.26  VH
+171:41.92  Vimentin
+173:13.55  VL
+173:55.25  X-ray crystallography
+175:13.81  第3章 DNA、基因與染色體（開場）
+175:19.23  Ch 3 本章敘述
+185:40.03  adaptive CNV
+186:38.03  adenine
+187:33.23  Allele
+188:26.19  Aneuploidy
+189:30.03  Annealing
+190:20.34  Antiparallel
+191:27.29  AT-rich
+192:25.99  Avery, MacLeod and McCarty
+193:29.98  Base pairing
+194:20.67  Centromere
+195:23.33  Chromatin
+196:31.48  Chromosome
+197:37.39  Circular DNA
+198:46.04  Copy number variation (CNV)
+199:49.05  Cytosine
+200:53.30  Deletion
+201:55.53  Denaturation
+202:45.40  Deoxyribose
+203:37.90  Diploid
+204:53.91  DNA fingerprint
+205:39.90  DNase
+206:57.89  donor plasmid
+207:41.10  Double helix
+208:54.89  Down syndrome
+210:02.00  Driver
+211:11.69  Duplication
+212:21.39  EcoRI
+213:17.68  Euchromatin
+214:25.06  Extension
+215:17.59  Frameshift
+216:33.86  G-banding
+217:51.16  GC-rich
+218:53.02  Gene
+219:54.61  Genome
+220:52.59  genomic instability
+221:53.98  Griffith
+223:05.54  guanine
+223:52.07  Heterochromatin
+225:01.15  Heterozygous
+226:12.75  Homologous chromosome
+227:18.07  Homozygous
+228:16.64  ideogram
+229:14.73  insert
+230:00.17  Inversion
+231:16.07  Karyotype
+232:14.20  Karyotyping
+233:06.64  Meiosis I and meiosis II
+234:03.83  Melting temperature (Tm)
+234:50.19  Missense mutation
+235:39.94  Molecular cloning
+236:25.63  Monosomy
+237:24.79  Mutation
+238:03.25  Non-disjunction
+238:54.23  Nonsense mutation
+239:55.38  NotI
+240:44.34  Nucleosome
+241:56.22  p-arm
+242:41.72  Passenger
+243:26.51  PCR
+244:21.36  plasmid
+245:10.40  Point mutation
+246:01.12  Primer
+246:59.58  Primer annealing
+247:44.94  Primer pair
+248:29.61  Protease
+249:37.28  q-arm
+250:46.66  recipient plasmid
+251:33.60  recombinant plasmid
+252:21.20  resolution
+253:14.49  Ribose
+254:20.93  Sanger sequencing
+255:29.98  Silent mutation
+256:14.33  Sister chromatid
+257:26.06  sticky end
+258:03.17  Strand
+259:09.30  Structural variant
+260:33.24  Substitution
+261:47.43  Telomere
+263:08.94  thymine
+263:56.62  Transcription factor
+265:13.96  Transforming principle
+266:30.46  Translocation
+267:47.14  Trisomy
+269:00.27  Trisomy 21
+270:13.04  Turner syndrome (45,X)
+271:22.96  uracil
+272:08.41  vector
+272:52.23  Watson, Crick and Franklin
+274:08.20  第4章 染色質與表觀遺傳（開場）
+274:13.30  Ch 4 本章敘述
+284:04.94  Acetylation
+285:09.31  Anti-PD-1 antibody
+286:24.39  AUC (area under the curve)
+287:48.41  Bisulfite sequencing
+288:53.58  Boundary elements
+289:34.62  BRD4
+290:46.32  CDKN2A
+292:06.57  Cell-free DNA (cfDNA)
+293:14.72  Cellular memory
+294:12.57  CHD
+295:16.95  Chromatin fibre
+296:18.17  Chromatin remodelling complex
+297:26.93  CIMP
+298:40.27  Confidence interval
+300:07.48  CpG island
+301:12.18  CpG site
+302:19.25  De novo methyltransferases
+303:17.15  Deacetylation
+304:26.79  DNMT1
+305:38.09  DNMT3A and DNMT3B
+306:58.99  Germ cell
+308:02.43  H1
+309:01.88  H2A K119ub
+309:59.27  H2B K123ub
+311:00.08  H3 K4me
+311:59.76  H3 K79me
+312:50.41  H3K4me3
+314:07.92  H3K9me3
+315:12.69  H4 K12ac
+316:08.09  H4 K8ac
+316:59.32  HDAC inhibitor
+318:25.62  Histone
+319:40.45  Histone code
+320:56.27  Histone modification
+322:04.04  Histone variants (H2A, H2B, H3 and H4)
+323:17.91  HP1
+324:10.80  hypermethylated
+325:04.61  hypomethylated
+325:59.64  IFN-γ
+327:11.26  INO80
+327:57.15  ISWI
+328:38.08  Lysine
+329:35.61  Maintenance methyltransferases
+330:16.53  MDSCs
+331:16.61  Methyl group
+332:01.69  Methylation
+333:10.83  MGMT
+334:19.79  Multivariate logistic regression
+335:25.56  non-covalent
+336:16.33  octamer
+337:07.21  Odds ratio
+338:07.77  orthology
+339:00.26  P-value
+340:23.47  p16
+341:26.12  Positive-feedback loop
+342:31.74  S-adenosyl methionine (SAMe)
+343:49.35  Sodium bisulfite
+344:45.16  STAT3
+346:03.75  Suv39h
+346:53.18  TET
+348:10.52  TMZ
+349:03.66  Tumor suppressor
+350:26.97  unmethylated
+351:14.55  第5章 DNA 複製（開場）
+351:18.81  Ch 5 本章敘述
+364:01.71  Anti-TERT
+365:10.63  dispersive
+366:06.81  DNA ligase
+367:14.91  DNA polymerase
+368:33.35  dNTPs
+369:20.41  Drug resistance
+370:35.19  End-replication problem
+371:55.61  EXO
+372:52.68  Exonuclease
+374:05.22  Hayflick limit
+375:27.51  Helicase
+376:48.43  Hepatocellular carcinoma (HCC)
+378:27.99  Hepatocyte
+379:45.31  Lagging strand
+380:41.73  Leading strand
+381:33.93  misincorporation
+382:27.85  Mitotic clock
+383:43.50  MLH1/PMS2
+384:51.27  MSH2/MSH6
+385:56.66  Nick
+386:47.94  Okazaki fragment
+387:47.11  origin of replication
+388:32.54  Phosphodiester bond
+389:23.68  POL
+390:09.74  Pold1
+391:07.39  Pole
+392:04.95  Pole e/e Pold1 e/e
+392:49.88  Primase
+393:47.56  Proofreading
+395:17.37  Replication bubble
+396:20.96  Replication fork
+397:13.80  replicons
+397:58.99  Reverse transcriptase
+399:08.42  RNase H
+400:06.90  Semi-conservative replication
+401:19.37  Senescence
+402:27.26  Telomerase
+403:52.48  TEM
+404:33.78  Template strand
+405:40.28  TERC
+406:33.15  Topoisomerase
+407:49.50  TZAP
+408:31.91  Wild type
+409:37.39  第6章 DNA 損傷與修復（開場）
+409:42.69  Ch 6 本章敘述
+424:46.71  53BP1, RIF1 and Shieldin
+425:39.74  Alkylation
+426:42.13  alternative end joining (a-EJ)
+427:39.48  Antigen-presenting cell
+428:49.97  AP site
+429:41.57  ATM
+430:36.08  ATR
+431:22.75  Base excision repair (BER)
+432:22.68  branch migration
+433:08.57  BRCA1 and BRCA2
+434:34.20  CA loop
+435:35.36  Caspase 8 and caspase 9
+436:34.56  CRISPR/Cas9
+437:55.22  CSA and CSB
+438:53.14  Direct reversal
+439:47.38  Diversity
+440:34.27  DNA adduct
+441:48.74  DNA Damage Response (DDR)
+443:09.96  DNA glycosylase
+444:02.80  DNA repair
+445:24.18  donor template
+446:19.31  Double-strand break (DSB)
+447:38.14  Effectors
+448:39.36  endogenous
+449:21.57  exogenous
+450:14.72  Gene knock-in
+451:26.61  Gene knock-out
+452:35.07  GG-NER
+453:40.33  gRNA
+454:45.58  HBV
+456:07.68  Helper T cell
+457:21.57  HNH
+458:22.44  Homologous recombination (HR)
+459:42.11  homologous template
+460:20.80  Homology-directed repair
+461:31.87  Indel
+462:44.75  integration
+463:42.06  Ku
+464:39.46  KU and DNA-PKcs
+465:35.20  MHC (major histocompatibility complex)
+466:30.46  MHC class I
+467:28.65  MHC class II
+468:23.21  Microsatellite
+469:19.75  Microsatellite instability (MSI)
+470:21.70  Mismatch repair (MMR)
+471:27.59  Mlh1
+472:25.72  MMR deficiency
+473:11.00  MSI-H
+474:03.97  MSS
+474:55.74  Non-homologous end joining (NHEJ)
+476:21.01  Nucleotide excision repair (NER)
+477:29.20  p53
+478:30.55  PAM
+479:25.07  PARP inhibitor
+480:25.11  polymerase slippage
+481:15.19  pyrimidine dimers
+481:59.41  RAD51
+482:53.20  Rad51, Rad52 and RPA
+483:53.69  Radiation
+484:44.37  Reactive oxygen species (ROS)
+485:54.63  recombination-signal sequences
+486:49.86  RNA polymerase
+487:49.60  RNA polymerase II
+489:04.95  RPA
+489:56.00  RuvC
+490:48.88  SCID (severe combined immunodeficiency)
+492:03.35  Sensors
+493:00.77  somatic recombination
+493:48.73  Synthetic lethality
+494:41.22  T-cell
+495:58.01  TC-NER
+496:54.43  TCR (T-cell receptor)
+498:11.59  TFIIH
+499:30.27  Therapeutic window
+500:41.13  tolerance
+501:29.60  Transducer
+502:55.80  Ultraviolet light
+503:46.52  V(D)J recombination
+505:13.17  XPA
+506:01.89  XPC
+506:48.00  XPF and XPG
+507:38.93  ZFN
+508:55.93  第7章 基因表現的調控（開場）
+509:00.66  Ch 7 本章敘述
+524:49.10  14-3-3
+525:50.60  3 prime untranslated region (3 prime UTR)
+527:04.22  Activator
+528:05.90  AF-1 and AF-2
+529:14.96  AGO
+530:16.72  Allolactose
+531:23.00  Alternative polyadenylation
+532:28.10  Alternative splicing
+533:33.36  AND-gate
+534:34.17  Apo-repressor
+535:32.75  APOLO
+536:47.06  AR-V7
+538:02.22  Basal transcription
+539:02.31  calcium ions
+539:55.93  cAMP (cyclic adenosine monophosphate)
+541:00.52  CAP
+542:04.22  Cap (5 prime cap)
+543:07.68  CAP-cAMP (cAMP-CAP)
+544:14.63  Cell-type specificity
+545:21.82  Central dogma
+546:23.82  Cis-regulatory element
+547:25.77  Co-activator (nuclear receptor)
+548:31.22  Co-repressor (nuclear receptor)
+549:33.42  Core promoter
+550:40.55  Corepressor
+551:47.90  Cryptic exon
+552:54.21  CTGF
+554:01.11  Cytokine
+555:12.76  Cytoplasm
+556:06.76  Delta ligand
+557:01.91  Developmental specificity
+558:01.80  Dicer
+559:17.95  Dimerisation
+560:26.44  DNA-bending protein
+561:36.50  Drosha
+562:53.01  Endometrium
+564:00.69  Enhanceosome
+565:03.82  Enhancer
+566:08.97  EPO
+567:16.51  Estrogen receptor (ER)
+568:23.68  Estrogen response element (ERE)
+569:22.01  Exon
+570:36.32  Exon inclusion and exon skipping
+572:13.70  Exportin-5
+573:27.84  Gene expression
+574:38.01  Gene expression programme
+575:54.33  General transcription factor
+577:19.61  Genotype
+578:14.63  GLUT1
+579:20.82  Glycosylation
+580:21.83  Guide (lncRNA)
+581:50.35  HER1, HER3 and HER4
+583:11.39  HER2
+584:48.31  Heterodimer
+585:58.95  HIF-1α
+587:19.89  HIF-1β
+588:33.13  HIF-CAR
+589:46.98  Homodimer
+591:00.03  Hormone
+592:05.77  HSP90
+593:12.55  Hypoxia
+594:19.57  Hypoxia-responsive element (HRE)
+595:26.09  IL-1β
+596:32.54  Inducible system
+597:40.57  Induction
+598:46.96  Insulator
+599:50.85  Intron
+601:16.93  IPTG
+602:36.18  Isoform
+603:56.79  IκB (I-kappa-B)
+605:22.53  Lac operon
+606:24.80  Lac repressor
+607:16.38  Lactose
+608:04.95  LATS1
+609:04.22  Ligand
+609:56.55  LncRNA (long non-coding RNA)
+610:56.43  Luciferase
+611:45.79  MicroRNA (miRNA)
+613:32.57  mRNA half-life
+614:27.91  MST1
+615:25.04  Mutant splice site
+616:25.67  NF-κB (nuclear factor kappa B)
+617:37.91  NICD
+618:25.72  Notch
+619:15.49  NOTCH2
+620:07.57  Nuclear pore
+621:03.21  Nuclear receptor
+621:57.25  Nuclear transcription factor
+622:49.07  Operator
+623:51.71  Operon
+624:49.60  p300/CBP
+625:43.50  p50 and p65
+626:46.41  Pasha
+627:38.48  PHD and FIH
+628:58.34  Phenotype
+629:48.46  PNCTR
+630:45.99  Poly-A tail
+631:38.73  Polyadenylation
+632:40.16  Polyadenylation site (PAS)
+633:37.90  Polycistronic mRNA
+634:31.22  Polyubiquitination
+635:27.59  Pre-initiation complex
+636:51.55  Pre-mRNA
+637:54.37  Promoter
+639:01.41  Proteasome
+640:10.83  Proteolytic cleavage
+641:20.36  Receptor
+642:23.88  Receptor occupancy
+643:32.55  Recombinant protein
+644:43.11  Regulatory gene
+645:44.17  Reporter assay
+646:54.76  Reporter gene
+647:53.57  Repressible system
+648:51.74  Repressor
+649:54.26  RISC
+651:22.86  RNA-binding protein (RBP)
+652:43.08  RXR
+653:53.85  SAV
+655:03.09  Scaffold
+656:15.29  Second messenger
+657:20.34  Seed sequence
+658:26.48  Selective Estrogen Receptor Modulator (SERM)
+659:38.46  Serial deletion
+660:47.51  Signal transduction
+662:00.44  Silencer
+663:16.48  siRNA
+664:14.77  snRNP
+665:34.40  Spliceosome
+666:49.35  Splicing
+668:13.60  Splicing factor
+669:21.78  Structural gene
+670:29.20  synNotch
+671:40.49  Synthetic biology
+672:44.69  Tamoxifen
+673:52.31  TATA box
+675:14.43  TBP (TATA-box-binding protein)
+676:19.56  TEAD
+677:33.74  TFIID
+678:51.06  TINCR
+680:21.52  TNF-α
+681:39.06  Toxic pre-expression
+682:58.68  Trans-acting factor
+684:11.94  Transcription
+685:27.64  Transcription start site
+686:34.84  Translation
+687:46.70  Trastuzumab (Herceptin)
+689:25.70  tRNA (transfer RNA)
+690:44.43  Trp (tryptophan) operon
+691:49.48  Trp repressor
+692:59.85  Type I nuclear receptor
+694:09.90  Type II nuclear receptor
+695:25.40  Ubiquitin
+696:36.56  Untranslated region (UTR)
+698:06.06  VEGF
+699:20.95  VHL
+700:43.73  XIST
+701:59.88  YAP
+703:16.48  Zinc finger
+704:32.94  第8章 細胞生物學（開場）
+704:37.76  Ch 8 本章敘述
+718:43.42  Actin
+719:51.40  Anaphase
+720:53.79  APAF-1
+721:50.93  Apoptosis
+722:58.33  Apoptosome
+724:00.01  Autophagy
+724:59.50  Bcl-2 family
+725:58.97  BI 905711
+726:54.26  bid
+727:34.78  Binucleated cell
+728:41.13  Bispecific antibody
+729:46.55  cardiotoxicity
+730:39.70  Caspase
+731:38.90  CDH17 (Cadherin-17)
+732:46.86  CDK4/6 inhibitor
+734:01.10  Cell cycle
+735:08.24  Cell cycle arrest
+736:09.45  Centrosome
+737:06.94  Checkpoint
+738:12.08  Cip/Kip
+739:24.87  Cis face
+740:24.00  cisternae
+741:15.97  Contractile ring
+742:16.86  Cristae
+743:20.49  Crossing over
+744:27.81  Cyclin
+745:35.82  Cyclin-dependent kinase (CDK)
+746:47.16  Cytochrome c
+747:52.36  Cytokinesis
+748:55.91  Cytoskeleton
+750:02.58  Death receptor
+751:06.14  Differentiation
+752:10.93  E2F
+753:27.21  Ectoderm
+754:38.64  Endoderm
+755:32.54  Endosymbiotic origin
+756:41.16  Eukaryote
+757:46.58  Extrinsic apoptosis pathway
+759:10.16  fetal bovine serum (FBS)
+760:08.08  G0
+761:18.60  G1
+762:26.94  G2
+763:30.78  Golgi apparatus
+764:36.64  Haploid
+765:49.74  Heteroplasmy
+766:59.14  Homoplasmy
+768:00.65  Inhibitor of apoptosis (IAP)
+769:08.06  INK4
+770:39.12  Intermembrane space
+771:54.30  Intrinsic apoptosis pathway
+773:05.61  iPSC (induced pluripotent stem cell)
+774:27.79  Lysosome
+775:16.19  M phase
+776:11.79  Maternal inheritance
+777:14.32  Matrix (mitochondrial matrix)
+778:17.21  Meiosis
+779:08.02  Mesoderm
+779:55.51  Microtubule
+780:49.14  Mitochondrial DNA (mtDNA)
+781:51.08  Mitochondrial Eve
+782:43.12  Mitochondrion
+783:44.80  Mitosis
+784:27.36  mitotic recombination
+785:18.24  Mitotic spindle
+786:03.26  Multinucleated cell
+786:56.23  Multipotent
+787:47.67  Myosin
+788:41.80  Necrosis
+789:36.67  Nuclear envelope
+790:24.21  Nucleoid
+791:09.43  Nucleolus
+791:44.90  Nucleus
+792:37.60  Organelle
+793:25.77  Oxidative phosphorylation
+794:22.73  Palbociclib
+795:25.39  paternal
+796:15.97  Penetrance
+797:10.38  Plasma membrane
+798:00.81  Pluripotent
+798:55.22  pRb
+800:01.98  Prokaryote
+800:50.86  Quiescent
+801:59.12  recombinant chromatids
+802:51.83  Ribosome
+803:56.24  RNA interference (RNAi)
+805:06.57  Rough ER
+806:20.22  rRNA
+807:28.62  S phase
+808:41.52  Serum starvation
+809:57.14  Smooth ER
+810:58.77  Stem cell
+812:21.64  tbid
+813:11.29  TCA cycle
+814:25.20  Teratoma assay
+815:43.33  Threshold effect
+817:07.69  TRAIL
+817:58.58  TRAILR2
+818:46.83  Trans face
+819:59.03  Transport vesicle
+821:09.55  Vesicle
+822:18.14  Yamanaka factors
+823:40.02  第9章 免疫學與腫瘤免疫（開場）
+823:45.44  Ch 9 本章敘述
+836:30.78  3D reconstruction
+837:18.53  4-1BB
+838:20.48  Adenosine
+839:26.42  adhesion and activation
+840:18.39  Adoptive cell therapy
+841:22.88  Allogeneic
+842:13.40  Anergy
+843:20.44  Anti-PD-L1 antibody
+844:22.21  Autologous
+845:17.11  Cancer-associated fibroblast (CAF)
+846:23.62  CAR (Chimeric Antigen Receptor)
+847:33.98  CD28
+848:39.53  CD45
+849:36.65  Cell adhesion molecule (CAM)
+850:36.23  Chemokine
+851:39.74  chemotaxis
+852:16.73  Circulating tumour cell (CTC)
+853:22.29  Co-localisation
+854:24.95  Co-stimulatory domain
+855:29.33  Cold tumour
+856:28.37  Complement
+857:37.39  Confocal microscopy
+858:40.53  CTC0
+859:41.99  CTLA-4
+860:57.58  DAPI
+861:46.92  dMMR
+862:31.61  E-selectin
+863:34.31  ECM (extracellular matrix)
+864:40.26  EpCAM
+865:43.73  Epithelial-to-mesenchymal transition (EMT)
+866:53.01  Ex vivo
+867:58.97  FACS
+869:12.52  FAP
+869:59.64  Flow cytometry
+871:16.89  Forward scatter (FSC)
+872:28.69  Gating
+873:39.71  granularity
+874:35.07  Granzyme
+875:36.71  Hinge region
+876:38.24  Hot tumour
+877:54.42  ICAM-1
+879:02.00  IDO
+880:11.38  IL-10
+880:59.59  IL-15
+882:03.93  IL-2
+883:05.22  Immune checkpoint
+884:32.71  Immune evasion
+885:39.84  Immunofluorescence (IF)
+886:47.04  Immunohistochemistry (IHC)
+888:01.26  LAG3
+888:56.70  Laser capture microdissection (LCM)
+889:53.39  linker
+890:40.94  Lipid nanoparticle (LNP)
+891:40.38  Liquid biopsy
+892:42.67  Log-rank test
+893:35.48  manufacturing cycle
+894:36.49  MCP-1
+895:25.29  Multiplex immunofluorescence
+896:16.16  Neoantigen
+897:12.60  P-selectin
+898:21.75  PD-1
+899:27.05  PD-L1
+900:33.65  PD-L2
+901:17.76  PECAM-1
+902:17.29  Perforin
+903:11.38  pinhole
+903:54.71  progression-free survival
+904:49.22  rolling
+905:40.26  scFv
+906:48.15  Selectin
+907:57.53  side scatter (SSC)
+908:48.42  TAMs
+909:29.98  TGFβ
+910:43.91  TIM3
+911:31.26  Transmembrane domain
+912:41.59  transmembrane segments
+913:28.77  transmigration
+914:07.75  Tregs
+915:18.11  Tumor microenvironment
+916:51.09  ultramutator
+917:42.73  VCAM-1
+918:50.70  VISTA
+919:41.66  ZAP70
+920:33.76  第10章 癌症生物學與標靶治療（開場）
+920:39.18  Ch 10 本章敘述
+931:52.36  Aerobic glycolysis
+932:51.19  Antibody-drug conjugate (ADC)
+933:59.29  BRAF
+934:48.87  branched linker
+935:42.72  Breathomics
+936:42.02  CEA
+937:35.47  censored
+938:14.50  Cetuximab
+939:21.85  circulating surrogate marker
+940:10.39  Constitutively active
+941:02.62  cytotoxic payload
+941:51.56  Daraxonrasib (Rasonque)
+943:00.66  datopotamab-deruxtecan
+943:50.66  deruxtecan
+944:44.44  Drug target
+945:54.95  Dual-payload ADC
+946:48.21  DXd
+948:03.32  EGFR
+949:39.09  ERBB2
+950:41.99  FDR
+951:36.17  GAP-mediated GTP hydrolysis
+952:33.86  GC-MS
+953:57.90  Glycolysis
+955:25.94  GTP-bound
+956:06.07  Human Protein Atlas
+957:34.74  K-Ras
+958:44.12  Kaplan-Meier curve
+959:47.54  Lactate
+960:46.25  median overall survival
+961:37.32  Metabolite
+962:21.28  Metabolite fingerprint
+963:16.68  Metabolomics
+964:28.97  NMR
+965:18.51  NPM1
+966:12.90  Oncogene
+967:06.01  PCA (principal component analysis)
+967:59.99  PI3K
+968:57.27  Predictive biomarker
+969:49.42  Prognostic biomarker
+970:40.05  Proliferative signal
+971:49.11  Receptor tyrosine kinase (RTK)
+973:16.84  Small molecule
+974:27.14  SN-38
+975:44.96  surrogate endpoints
+976:40.82  trastuzumab-deruxtecan
+977:35.04  Trop2
+978:48.99  Undraggable target
+980:09.06  Warburg effect
+981:29.04  第11章 檢驗技術與組學（開場）
+981:34.09  Ch 11 本章敘述
+992:51.70  accuracy
+993:48.96  Biomarker
+994:56.02  Companion diagnostic
+996:03.11  Diagnostic biomarker
+997:14.12  ELISA
+998:39.55  FISH
+1000:03.84  hydrodynamic focusing
+1000:51.80  Isoelectric focusing
+1002:06.24  Microarray
+1003:10.51  Propidium iodide (PI)
+1004:30.39  Proteomics
+1005:36.36  qPCR
+1006:51.71  RNA sequencing
+1007:44.39  Sensitivity
+1009:06.44  sheath fluid
+1009:51.65  Specificity
+1011:10.03  Western blot
+1012:20.73  第12章 藥物開發與臨床試驗（開場）
+1012:25.97  Ch 12 本章敘述
+1021:16.05  Breakthrough Therapy Designation
+1022:00.55  Disease relevance
+1022:49.56  Dose escalation
+1023:52.55  Druggability
+1024:44.98  efficacy
+1025:36.55  Expansion cohorts
+1026:26.93  first-to-invent
+1027:20.28  Freedom to Operate (FTO)
+1028:09.41  humanised mouse
+1028:53.75  IND (Investigational New Drug)
+1030:18.39  IND-enabling studies
+1031:11.36  IP
+1031:53.85  medicinal chemistry
+1032:41.25  MOA
+1033:34.19  Non-obviousness
+1034:13.70  patent pool
+1034:58.29  pre-IND
+1035:51.01  pre-pre-IND
+1036:35.05  preclinical
+1037:25.89  Priority Review
+1038:12.36  structural tractability
+1038:52.65  target identification
+1039:45.36  Target nomination
+1040:34.87  toxicology
+1041:22.74  adenovirus
+1042:04.84  Anti-inflammatory mediator
+1043:12.88  APC
+1044:05.96  aristolochic acid I (AA-I)
+1044:58.77  Arylamination
+1046:05.46  Atezolizumab
+1047:11.65  Benzo(a)pyrene
+1048:08.21  CAR-NK
+1049:10.09  Carrier
+1050:04.05  cccDNA
+1051:01.37  CCR2b
+1051:53.01  CCR4
+1052:44.06  CD3 zeta (CD3z)
+1053:53.06  CD47
+1054:45.78  CD73
+1055:41.66  Coenzyme
+1056:34.49  Cofactor
+1057:35.84  Consensus sequence
+1058:33.93  Dendritic cell
+1059:37.68  detergents
+1060:18.35  episome
+1061:15.32  FoSTeS
+1062:01.70  GPCR (G-protein-coupled receptor)
+1063:08.27  granulocytes
+1063:57.37  Homoeologous recombination
+1065:22.81  HSPGs
+1066:02.99  Integrin
+1067:08.59  ion channels
+1067:58.40  Ipilimumab
+1069:19.78  KIBRA, MER and WILLIN
+1070:22.14  MEI
+1071:15.48  monocytes
+1072:00.42  Mutagen
+1072:51.87  NAHR (non-allelic homologous recombination)
+1073:46.60  Nivolumab
+1074:52.31  NNK
+1075:46.17  NNN
+1076:40.06  Organoid
+1077:29.90  P-body
+1078:29.54  P450
+1079:25.62  Pembrolizumab
+1080:33.15  PKC (protein kinase C)
+1081:33.68  POB-DNA
+1082:24.52  rcDNA
+1083:18.79  RNA vaccine
+1084:24.72  solid-tumour barriers
+1085:32.40  tobacco-specific nitrosamines
+1086:25.31  VIP (vasoactive intestinal peptide)
+1087:40.32  X-linked dominant
+1088:52.55  X-linked recessive
+1089:56.80  （全書完）
