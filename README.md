@@ -38,7 +38,7 @@
 | 連續聽全書 | 頂部專輯橫條嘅 **Ch 1 … Ch 13**（每章約 30–200 分鐘）| [有聲版](https://rollroyces.github.io/gnbf5020-study-kit/index.html) |
 | 連續聽晒 18 個鐘 | **全書連播 · 下載** — 單一檔案，403 MB，落載後用任何播放器播 | [落載](https://github.com/rollroyces/gnbf5020-study-kit/releases/download/v1/ALL_full_book_18h.m4a) |
 | 測下自己記唔記得 | **自我測驗** — 905 條術語，中／英兩版，頂部一按切換 | [開始測驗](https://rollroyces.github.io/gnbf5020-study-kit/quiz.html) |
-| 睇短片 | **12 條短片**（考試份量最高嘅 12 個詞條，每條約 1 分鐘，英文旁白 + 繁體中文字幕）| [短片索引](https://rollroyces.github.io/gnbf5020-study-kit/videos/index.html) |
+| 睇短片 | **16 條短片**（V01–V12 考試份量最高嘅詞條，V13–V16 五個核心機制；每條約 1–2 分鐘，英文旁白 + 繁體中文字幕）| [短片索引](https://rollroyces.github.io/gnbf5020-study-kit/videos/index.html) |
 | 睇溫習手冊 | 8 份 PDF（6 份英文原文 + 6 份繁體中文版，內容一一對應）| [PDF 清單](#pdf-溫習手冊) |
 | 搵返某條術語 | 搜尋框打英文或者中文，即刻有 905 條播放器 | [有聲版](https://rollroyces.github.io/gnbf5020-study-kit/index.html) |
 | 跳去某章某條 | 每章都有時間碼表（逐條時間碼）| [時間碼表](#時間碼表) |
@@ -56,7 +56,7 @@
 | **由零開始 · 極簡起步**（8 屏概念 + 術語音檔 + 即時自我檢查）| https://rollroyces.github.io/gnbf5020-study-kit/start.html |
 | 總目錄 Hub | https://rollroyces.github.io/gnbf5020-study-kit/hub.html |
 | 自我測驗（905 題，中／英切換）| https://rollroyces.github.io/gnbf5020-study-kit/quiz.html |
-| 短片索引（12 條）| https://rollroyces.github.io/gnbf5020-study-kit/videos/index.html |
+| 短片索引（16 條）| https://rollroyces.github.io/gnbf5020-study-kit/videos/index.html |
 
 ### PDF 溫習手冊
 
@@ -69,7 +69,9 @@
 | Exam Focus Prediction | 考試重點預測：Tier 1 題目、關鍵數字、排除清單、19 組干擾項對比 | [PDF](https://rollroyces.github.io/gnbf5020-study-kit/pdf/GNBF5020_Exam_Focus_Prediction.pdf) |
 | Case Study Bank | 案例研習題庫：16 個臨床情境案例附示範答案（最高產出：Case 1–6、10–13）| [PDF](https://rollroyces.github.io/gnbf5020-study-kit/pdf/GNBF5020_Case_Study_Bank.pdf) |
 | Today Study Plan | 今日學習計劃：最後 72 小時嘅溫習時間表（8 個 Block）| [PDF](https://rollroyces.github.io/gnbf5020-study-kit/pdf/GNBF5020_Today_Study_Plan.pdf) |
-| Complete Revision Pack | 五講完整重點、16 道案例題、溫習速查表，附十二段短片導覽 | [PDF](https://rollroyces.github.io/gnbf5020-study-kit/pdf/GNBF5020_Complete_Revision_Pack.pdf) |
+| Complete Revision Pack | 五講完整重點、16 道案例題、溫習速查表，附短片導覽 | [PDF](https://rollroyces.github.io/gnbf5020-study-kit/pdf/GNBF5020_Complete_Revision_Pack.pdf) |
+| Midterm Drill Pack | 期中考試操練手冊：考試形式、他點名的五種題型、70 條單選最佳答案題庫（附干擾項分析）、兩份情境題範本 | [PDF](https://rollroyces.github.io/gnbf5020-study-kit/pdf/GNBF5020_Midterm_Drill_Pack.pdf) |
+| Lecture Quick Reference | 講次速查表：一講一頁，你必須做到什麼 + 他講過的每一個數字 | [PDF](https://rollroyces.github.io/gnbf5020-study-kit/pdf/GNBF5020_Lecture_Quick_Reference.pdf) |
 
 **繁體中文版**（內容與上面一一對應）
 
@@ -81,10 +83,12 @@
 | 案例研習題庫 | Case Study Bank | [PDF](https://rollroyces.github.io/gnbf5020-study-kit/pdf/GNBF5020_%E6%A1%88%E4%BE%8B%E7%A0%94%E7%BF%92%E9%A1%8C%E5%BA%AB_%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87.pdf) |
 | 今日學習計劃 | Today Study Plan | [PDF](https://rollroyces.github.io/gnbf5020-study-kit/pdf/GNBF5020_%E4%BB%8A%E6%97%A5%E5%AD%B8%E7%BF%92%E8%A8%88%E5%8A%83_%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87.pdf) |
 | 中文版溫習手冊 | Complete Revision Pack | [PDF](https://rollroyces.github.io/gnbf5020-study-kit/pdf/GNBF5020_%E4%B8%AD%E6%96%87%E7%89%88%E6%BA%AB%E7%BF%92%E6%89%8B%E5%86%8A.pdf) |
+| 期中考試操練手冊 | Midterm Drill Pack | [PDF](https://rollroyces.github.io/gnbf5020-study-kit/pdf/GNBF5020_%E6%9C%9F%E4%B8%AD%E8%80%83%E8%A9%A6%E6%93%8D%E7%B7%B4%E6%89%8B%E5%86%8A_%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87.pdf) |
+| 講次速查表 | Lecture Quick Reference | [PDF](https://rollroyces.github.io/gnbf5020-study-kit/pdf/GNBF5020_%E8%AC%9B%E6%AC%A1%E9%80%9F%E6%9F%A5%E8%A1%A8_%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87.pdf) |
 
-### 12 條短片
+### 16 條短片
 
-英文旁白 + 繁體中文字幕，每條約 1 分鐘。呢 12 個詞條係考試份量最高嗰批。
+英文旁白 + 繁體中文字幕，每條約 1–2 分鐘。V01–V12 係考試份量最高嗰批詞條；V13–V16 係五個核心機制。
 
 | # | 詞條 | 章 | 短片 |
 |---|---|---|---|
@@ -100,6 +104,10 @@
 | V10 | Predictive vs prognostic biomarker 預測性與預後生物標記 | Ch 11 檢驗技術與組學 | [▶](https://rollroyces.github.io/gnbf5020-study-kit/videos/assets/V10_Predictive_vs_prognostic_biomarker.mp4) |
 | V11 | cis vs trans 作用元件 | Ch 7 基因表現的調控 | [▶](https://rollroyces.github.io/gnbf5020-study-kit/videos/assets/V11_cis_vs_trans.mp4) |
 | V12 | de novo vs maintenance methylation 從頭建立與維持型甲基化 | Ch 4 染色質與表觀遺傳 | [▶](https://rollroyces.github.io/gnbf5020-study-kit/videos/assets/V12_de_novo_vs_maintenance_methylation.mp4) |
+| V13 | DNA replication DNA 複製 | Ch 5 DNA 複製 | [▶](https://rollroyces.github.io/gnbf5020-study-kit/videos/assets/V13_DNA_replication.mp4) |
+| V14 | Transcription 轉錄 | Ch 7 基因表現的調控 | [▶](https://rollroyces.github.io/gnbf5020-study-kit/videos/assets/V14_Transcription.mp4) |
+| V15 | Translation 轉譯 | Ch 2 蛋白質與酵素 | [▶](https://rollroyces.github.io/gnbf5020-study-kit/videos/assets/V15_Translation.mp4) |
+| V16 | DNA repair DNA 修復 | Ch 6 DNA 損傷與修復 | [▶](https://rollroyces.github.io/gnbf5020-study-kit/videos/assets/V16_DNA_repair.mp4) |
 
 ### 章節專輯 · 講堂敘述 · 時間碼表
 
@@ -163,7 +171,7 @@
 - **905** 條術語音檔（粵語旁白，英文術語保留英文發音）
 - **13** 個章節專輯 + **12** 段章節敘述 + **14** 份時間碼表
 - **905** 條術語選擇題 × **2 個語言版本**（中文／英文，頂部一按切換；可按章節或題型篩選，答錯可以重做）
-- **12** 條短片、**12** 份溫習手冊 PDF（6 英文 + 6 中文）
+- **16** 條短片、**16** 份溫習手冊 PDF（8 英文 + 8 中文）
 - **發音對照 A/B**：同一批術語，原讀法同新讀法各播一次
 
 音檔全部 AAC 48 kbps 單聲道 M4A，iPhone、Android、車載機都直接播得。
