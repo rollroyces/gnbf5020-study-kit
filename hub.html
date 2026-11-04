@@ -71,13 +71,16 @@ footer p{margin:0 0 6px}
 <h1>GNBF5020 · Study Materials</h1>
 <p>Introduction to Molecular Biology and Genetics · Dr. Tony Wong · The Chinese University of Hong Kong · Lectures 1&ndash;6,
 12 Sep &ndash; 7 Nov 2026.</p>
-<p class="note">Everything in one place: 14 books (English + 繁體中文), 24 short video guides,
-and the Cantonese audio edition. This page opens straight from disk &mdash; no server,
+<p class="note">Everything in one place: 18 books (English + 繁體中文), 28 short video guides,
+the Cantonese audio edition and the self-test quiz. This page opens straight from disk &mdash; no server,
 no internet, nothing to install.</p>
 <nav class="toc">
 <a href="#books">The 12 course books</a>
 <a href="#lec6">Lecture 6 book</a>
-<a href="#videos">The 12 video guides</a>
+<a href="#exam">Midterm drill pack</a>
+<a href="#quiz">Self-test quiz</a>
+<a href="#start">Start from zero</a>
+<a href="#videos">The 16 video guides</a>
 <a href="#audio">Cantonese audio (18 h)</a>
 
 <a href="#map">Where everything lives</a>
@@ -207,11 +210,98 @@ exam strategy for the last hour.</p>
 </div>
 </section>
 
+<section id="exam">
+<h2 class="sec">Midterm drill pack &middot; quick reference</h2>
+<p class="lede">Two more books, aimed straight at the exam, in English and in
+繁體中文. They exist because of one thing he said about the midterm that the course
+books could not carry: the format, the question types, and every number he stated.</p>
+
+<div class="grid">
+<div class="card">
+<h3>Midterm Drill Pack</h3>
+<p>The exam format exactly as Dr. Wong describes it, the five question types he named
+outright, 70 single-best-answer MCQs with the distractor that catches people, and two
+worked scenario templates.</p>
+<p class="meta">15 pages &middot; 0.4 MB</p>
+<span class="path">GNBF5020_Midterm_Drill_Pack.pdf</span>
+<a class="dl" href="pdf/GNBF5020_Midterm_Drill_Pack.pdf">Open the PDF</a>
+</div>
+
+<div class="card">
+<h3>Lecture Quick Reference</h3>
+<p>One page per lecture: what you must be able to do, plus every exact number Dr. Wong
+stated &mdash; because he said every number is exam content.</p>
+<p class="meta">8 pages &middot; 0.3 MB</p>
+<span class="path">GNBF5020_Lecture_Quick_Reference.pdf</span>
+<a class="dl" href="pdf/GNBF5020_Lecture_Quick_Reference.pdf">Open the PDF</a>
+</div>
+
+<div class="card tc">
+<h3>期中考試操練手冊</h3>
+<p>考試形式、他點名的五種題型、70 條單選最佳答案題庫（附干擾項分析）、兩份情境題範本。</p>
+<p class="meta">15 頁 &middot; 3.5 MB</p>
+<span class="path">GNBF5020_期中考試操練手冊_繁體中文.pdf</span>
+<a class="dl alt" href="pdf/GNBF5020_期中考試操練手冊_繁體中文.pdf">開啟 PDF</a>
+</div>
+
+<div class="card tc">
+<h3>講次速查表</h3>
+<p>一講一頁，你必須做到什麼 + 他講過的每一個數字。</p>
+<p class="meta">7 頁 &middot; 2.3 MB</p>
+<span class="path">GNBF5020_講次速查表_繁體中文.pdf</span>
+<a class="dl alt" href="pdf/GNBF5020_講次速查表_繁體中文.pdf">開啟 PDF</a>
+</div>
+</div>
+</section>
+
+<section id="quiz">
+<h2 class="sec">Self-test quiz</h2>
+<div class="big">
+<h3>自我測驗 · 905 條術語</h3>
+<p>Multiple choice on every one of the 905 terms, drawn from the same explanations
+that the narration reads out. Answer and you are told immediately whether you
+were right, with the reason &mdash; and you can play the term's own Cantonese
+recording right there on the spot.</p>
+<ul>
+<li>Filter by chapter (Ch00&ndash;Ch12) or by question type: term &rarr; meaning,
+meaning &rarr; term, sentence fill-in, concept.</li>
+<li>中／英 兩版，頂部一按切換。Shuffled every time; wrong answers can be redone
+at the end.</li>
+<li>The page loads its question bank with <code>fetch()</code>, so it needs to be
+served over http: run <code>python3 -m http.server</code> in this folder and open
+<code>http://localhost:8000/_site/quiz.html</code>, or use the published site.</li>
+</ul>
+<span class="path">_site/quiz.html</span>
+<a class="dl alt" href="quiz.html">開始測驗 · Start the quiz</a>
+</div>
+</section>
+
+<section id="start">
+<h2 class="sec">Start from zero</h2>
+<div class="big">
+<h3>由零開始 · 極簡起步</h3>
+<p>Eight screens, one idea each: a cell is a factory, DNA is a recipe,
+proteins are machines, ATP is money, how DNA gets copied, how damage gets
+repaired, how genes get switched on, and why cancer is a typo in the
+manual. Every screen carries the key terms with their Cantonese audio
+and one question to check it.</p>
+<ul>
+<li>The order that works when the 216-page beginner guide feels like too
+much: read Chapter 2 (seven pages), then jump straight to Lecture 1.</li>
+<li>Progress is kept on your device, so you can stop and come back.</li>
+</ul>
+<span class="path">_site/start.html</span>
+<a class="dl alt" href="start.html">由零開始 · Start from zero</a>
+</div>
+</section>
+
 <section id="videos">
-<h2 class="sec">The 12 video guides</h2>
-<p class="lede">Twelve short video guides for the terms that carry the most exam weight.
-<b>Narration in English, subtitles in Traditional Chinese</b>, 43&ndash;54 seconds each.
-Open any MP4 straight from this page, or play all twelve on one page at
+<h2 class="sec">The 16 video guides</h2>
+<p class="lede">Sixteen short video guides for the terms and mechanisms that carry the most
+exam weight. <b>Narration in English, subtitles in Traditional Chinese</b>,
+43&ndash;54 seconds each &mdash; except the four mechanism guides V13&ndash;V16, which run
+95&ndash;125 seconds.
+Open any MP4 straight from this page, or play all sixteen on one page at
 <a href="videos/index.html"><b>_video/index.html</b></a>.<br>
 Each file lives in the folder <code>_video/assets/</code> &mdash; the exact path is printed
 under each title, so a moved or unclickable link is never a dead end.</p>
@@ -336,7 +426,47 @@ under each title, so a moved or unclickable link is never a dead end.</p>
 <a class="dl alt" href="videos/assets/V12_de_novo_vs_maintenance_methylation.mp4">Open the MP4</a>
 </div>
 
-<p style="margin:16px 0 0"><a class="dl" href="videos/index.html">Play all twelve on one page</a></p>
+<div class="vid">
+<span class="num">V13</span>
+<h3>DNA replication</h3>
+<p class="tc">DNA 複製</p>
+<p class="one">Semi-conservative, bidirectional and semi-discontinuous &mdash; the three adjectives that describe every replication fork.</p>
+<p class="meta">Ch 5 · DNA replication · 95.5 s</p>
+<span class="path">_video/assets/V13_DNA_replication.mp4</span>
+<a class="dl alt" href="videos/assets/V13_DNA_replication.mp4">Open the MP4</a>
+</div>
+
+<div class="vid">
+<span class="num">V14</span>
+<h3>Transcription</h3>
+<p class="tc">轉錄</p>
+<p class="one">RNA polymerase reads one template strand; eukaryotes add a cap, a tail and splicing before the message leaves the nucleus.</p>
+<p class="meta">Ch 7 · Control of gene expression · 113.7 s</p>
+<span class="path">_video/assets/V14_Transcription.mp4</span>
+<a class="dl alt" href="videos/assets/V14_Transcription.mp4">Open the MP4</a>
+</div>
+
+<div class="vid">
+<span class="num">V15</span>
+<h3>Translation</h3>
+<p class="tc">轉譯</p>
+<p class="one">The ribosome reads three bases at a time and builds one amino acid at a time, in one fixed direction.</p>
+<p class="meta">Ch 2 · Proteins and enzymes · 124.5 s</p>
+<span class="path">_video/assets/V15_Translation.mp4</span>
+<a class="dl alt" href="videos/assets/V15_Translation.mp4">Open the MP4</a>
+</div>
+
+<div class="vid">
+<span class="num">V16</span>
+<h3>DNA repair</h3>
+<p class="tc">DNA 修復</p>
+<p class="one">Six pathways deal with the damage; when one of them fails, you get a disease.</p>
+<p class="meta">Ch 6 · DNA damage and repair · 113.1 s</p>
+<span class="path">_video/assets/V16_DNA_repair.mp4</span>
+<a class="dl alt" href="videos/assets/V16_DNA_repair.mp4">Open the MP4</a>
+</div>
+
+<p style="margin:16px 0 0"><a class="dl" href="videos/index.html">Play all sixteen on one page</a></p>
 </section>
 
 <section id="audio">
@@ -365,11 +495,12 @@ and 14 albums, in AAC 48 kbps mono M4A that plays on iPhone, Android and car ste
 &mdash; the links inside the books and PDFs are relative to it.</p>
 <div class="big">
 <p style="font-family:'SF Mono',Menlo,Consolas,monospace;font-size:13px;line-height:1.9;margin:0">
-Video lecture/&nbsp; <code>GNBF5020_*.pdf</code> &nbsp; 14 books<br>
-Video lecture/<code>_video/assets/</code> &nbsp; the 24 MP4s<br>Video lecture/<code>_cantonese/assets/lec6/</code> &nbsp; Lecture 6 Cantonese audio<br>
-Video lecture/<code>_video/index.html</code> &nbsp; play all twelve course-wide<br>Video lecture/<code>_video/index_lec6.html</code> &nbsp; play all twelve from Lecture 6<br>
+Video lecture/&nbsp; <code>GNBF5020_*.pdf</code> &nbsp; 18 books<br>
+Video lecture/<code>_video/assets/</code> &nbsp; the 28 MP4s<br>Video lecture/<code>_cantonese/assets/lec6/</code> &nbsp; Lecture 6 Cantonese audio<br>
+Video lecture/<code>_video/index.html</code> &nbsp; play all sixteen course-wide<br>Video lecture/<code>_video/index_lec6.html</code> &nbsp; play all twelve from Lecture 6<br>
 Video lecture/<code>_cantonese/index.html</code> &nbsp; 18 h Cantonese audio<br>
 Video lecture/<code>_cantonese/assets/</code> &nbsp; the M4A files<br>
+Video lecture/<code>_site/</code> &nbsp; the self-test quiz and the start-from-zero page<br>
 Video lecture/<code>_diagrams/</code> &nbsp; figure sources &amp; PDF builders<br>
 Video lecture/<code>_audio/</code> &nbsp; transcripts &amp; the Markdown books<br>
 Video lecture/<code>_frames/</code> &nbsp; slide frame stills<br>
